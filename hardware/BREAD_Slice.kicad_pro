@@ -485,7 +485,9 @@
   },
   "libraries": {
     "pinned_footprint_libs": [],
-    "pinned_symbol_libs": []
+    "pinned_symbol_libs": [
+      "power"
+    ]
   },
   "meta": {
     "filename": "BREAD_Slice.kicad_pro",
@@ -726,19 +728,27 @@
     ],
     [
       "a83c9d89-e357-4154-b822-20364cfcbb55",
-      "AD8426 Dual Precision Strain Gauge1"
+      "AD8426 x2 Strain Gauge1"
     ],
     [
-      "4c4572f8-fce6-4415-bc6e-049345b285fb",
-      "AD8426 Dual Precision Strain Gauge2"
+      "f9d511ac-c64f-419a-8aa5-fc4e0d2db040",
+      "AD8426 x2 Strain Gauge2"
     ],
     [
-      "930b9713-dbf9-4b1f-a95b-461c0f2a511b",
-      "AD8426 Dual Precision Strain Gauge3"
+      "3c33af0a-0acf-464f-861c-4f5bdfe2369c",
+      "AD8426 x2 Strain Gauge3"
     ],
     [
-      "48cd671a-6db0-44b5-b799-de5f65c47e6c",
-      "AD8426 Dual Precision Strain Gauge4"
+      "fc1b9b2a-6a1c-44f1-a543-ca83aebc2df0",
+      "AD8426 x2 Strain Gauge4"
+    ],
+    [
+      "e6a3e594-cd55-4428-a6c3-0bb2454de731",
+      "TPS7A4901-VAA"
+    ],
+    [
+      "ba2695dd-f9d0-4a9f-9d4e-ae711593256f",
+      "TPS7A4901-5VA"
     ]
   ],
   "text_variables": {}

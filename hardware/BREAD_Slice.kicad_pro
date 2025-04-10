@@ -728,19 +728,19 @@
     ],
     [
       "a83c9d89-e357-4154-b822-20364cfcbb55",
-      "AD8426 x2 Strain Gauge1"
+      "AD8426 x2 Strain Gauge01"
     ],
     [
       "f9d511ac-c64f-419a-8aa5-fc4e0d2db040",
-      "AD8426 x2 Strain Gauge2"
+      "AD8426 x2 Strain Gauge23"
     ],
     [
       "3c33af0a-0acf-464f-861c-4f5bdfe2369c",
-      "AD8426 x2 Strain Gauge3"
+      "AD8426 x2 Strain Gauge45"
     ],
     [
       "fc1b9b2a-6a1c-44f1-a543-ca83aebc2df0",
-      "AD8426 x2 Strain Gauge4"
+      "AD8426 x2 Strain Gauge67"
     ],
     [
       "e6a3e594-cd55-4428-a6c3-0bb2454de731",
@@ -749,6 +749,38 @@
     [
       "ba2695dd-f9d0-4a9f-9d4e-ae711593256f",
       "TPS7A4901-5VA"
+    ],
+    [
+      "33ca6dac-f7af-474a-a4ff-efb912331bf6",
+      "LoadCell0"
+    ],
+    [
+      "d1906d4d-1a89-4091-a292-98a15aca5ba1",
+      "LoadCell1"
+    ],
+    [
+      "0eb360e5-74cb-4a78-8c7d-22fc28d10103",
+      "LoadCell2"
+    ],
+    [
+      "1d90970f-1fb7-445b-bcfc-27402137adb1",
+      "LoadCell3"
+    ],
+    [
+      "6244e238-2214-4133-acfe-13bbd88aef00",
+      "LoadCell4"
+    ],
+    [
+      "a45da7a9-4ae5-4e48-89a2-de4b492bb902",
+      "LoadCell5"
+    ],
+    [
+      "dab6a09c-e4e2-4fc0-9608-040fcf9ddb27",
+      "LoadCell6"
+    ],
+    [
+      "891e02d1-27f1-4820-a337-7b6ffb301aac",
+      "LoadCell7"
     ]
   ],
   "text_variables": {}

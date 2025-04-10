@@ -9,11 +9,13 @@ Notes on design.
 ### External Clock
 
 - **Oscillator:** ACO-8.000MHZ-EK
+
   - 8 MHz XO (Standard) HCMOS, TTL Oscillator, 5V enable/disable
   - Package: 14-DIP, 4 Leads (Metal Can)
   - Product: (See Digikey)
   - Procurement: [Digikey](https://www.digikey.ca/short/9n0brwjd)
   - Datasheet: [Abracon ACO Datasheet](https://abracon.com/Oscillators/ACO.pdf)
+
 - **Connection:**
 
   - Powered by a dedicated, low-noise 5V rail (from a TPS7A4901 set to 5V)
@@ -32,8 +34,6 @@ Notes on design.
       CLKCTRL.MCLKCTRLA = 0x03; // Set clock output off, select external clock source (PA00)
       ```
 
-    - This proposed method allows you to switch to an external oscillator without needing a fuse reprogramming tool.
-
 ### Instrumentation Amplifier
 
 - **Amplifier:** AD8426
@@ -41,6 +41,7 @@ Notes on design.
   - Product: [AD8426](https://www.analog.com/en/products/ad8426.html)
   - Procurement: [Digikey](https://www.digikey.ca/short/vj3493t8)
   - Datasheet: [AD8426 Datasheet](https://www.analog.com/media/en/technical-documentation/data-sheets/AD8426.pdf)
+
 - **REF Pin:**
   - Maintain low source impedance (<2 Ω recommended)
   - Use a buffered reference (OP1177, see below)
@@ -53,8 +54,10 @@ Notes on design.
   - Product: [TPS7A4901DGNR](https://www.ti.com/product/TPS7A49/part-details/TPS7A4901DGNR)
   - Procurement: [Digikey](https://www.digikey.ca/short/hr5vft5w)
   - Datasheet: [TPS7A49 Datasheet](https://www.ti.com/lit/ds/symlink/tps7a49.pdf)
+
 - **Clock Regulator:**
   - A second TPS7A4901 (configured to output a fixed 5V) provides the dedicated, low-noise 5VA rail for the external oscillator.
+
 - **Grounding:**
   - Analog ground (gnd_a) is kept separate from digital ground, but tied at a star point.
 
@@ -66,6 +69,7 @@ Notes on design.
   - Product: [OP1177](https://www.analog.com/en/products/op1177.html)
   - Procurement: [Mouser](https://mou.sr/3E6iI69)
   - Datasheet: [OP1177 Datasheet](https://www.analog.com/media/en/technical-documentation/data-sheets/op1177_2177_4177.pdf)
+
 - **Implementation:**
   - Typically one buffered reference can drive all REF pins if layout is good; otherwise, consider one per AD8426.
 

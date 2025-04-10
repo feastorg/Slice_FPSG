@@ -688,8 +688,8 @@
 		)
 	)
 	(rectangle
-		(start 83.82 67.31)
-		(end 226.06 118.11)
+		(start 83.82 59.69)
+		(end 226.06 138.43)
 		(stroke
 			(width 0)
 			(type default)
@@ -698,6 +698,17 @@
 			(type none)
 		)
 		(uuid 690fc728-8f6c-4493-a1a4-141f75188eb1)
+	)
+	(text "AD8426 transfer func.: 	VOUT = G * (VIN+ - VIN-) + VREF\nwhere: 					G = 1 + (49.4 kΩ / RG)\nwhich rearranges to: 	RG = 49.4 kΩ / (G - 1)\n\nDatasheet Table 11. Gains Achieved Using 1% Resistors\n\n|  1% Standard Table Value of RG  |    Calculated Gain     |\n---------------------------------------\n| 49.9 kΩ					| 1.990				|\n| 12.4 kΩ					| 4.984				|\n| 5.49 kΩ					| 9.998				|\n| 2.61 kΩ					| 19.93				|\n| 1.00 kΩ					| 50.40				|\n| 499 Ω						| 100.0				|\n| 249 Ω						| 199.4				|\n| 100 Ω						| 495.0				|\n| 49.9 Ω					| 991.0				|\n* AD8426 defaults to G = 1 without a gain resistor. \nTo determine total gain accuracy, include RG's tolerance \nand drift. Without RG, gain error and drift are minimal.\n"
+		(exclude_from_sim no)
+		(at 125.222 121.666 0)
+		(effects
+			(font
+				(size 0.889 0.889)
+			)
+			(justify left)
+		)
+		(uuid "3cce74c9-e096-41c8-90d8-0eef3ba3cbba")
 	)
 	(junction
 		(at 101.6 91.44)
@@ -760,7 +771,7 @@
 	)
 	(wire
 		(pts
-			(xy 115.57 63.5) (xy 115.57 82.55)
+			(xy 115.57 57.15) (xy 115.57 82.55)
 		)
 		(stroke
 			(width 0.2032)
@@ -771,7 +782,7 @@
 	)
 	(wire
 		(pts
-			(xy 189.23 121.92) (xy 189.23 92.71)
+			(xy 189.23 142.24) (xy 189.23 92.71)
 		)
 		(stroke
 			(width 0.2032)
@@ -914,7 +925,7 @@
 	)
 	(wire
 		(pts
-			(xy 113.03 121.92) (xy 113.03 96.52)
+			(xy 113.03 142.24) (xy 113.03 96.52)
 		)
 		(stroke
 			(width 0.2032)
@@ -936,7 +947,7 @@
 	)
 	(wire
 		(pts
-			(xy 217.17 121.92) (xy 217.17 95.25)
+			(xy 217.17 142.24) (xy 217.17 95.25)
 		)
 		(stroke
 			(width 0.2032)
@@ -1045,7 +1056,7 @@
 	)
 	(wire
 		(pts
-			(xy 175.26 121.92) (xy 175.26 100.33)
+			(xy 175.26 142.24) (xy 175.26 100.33)
 		)
 		(stroke
 			(width 0.2032)
@@ -1067,7 +1078,7 @@
 	)
 	(wire
 		(pts
-			(xy 97.79 63.5) (xy 97.79 90.17)
+			(xy 97.79 57.15) (xy 97.79 90.17)
 		)
 		(stroke
 			(width 0.2032)
@@ -1155,7 +1166,7 @@
 	)
 	(wire
 		(pts
-			(xy 92.71 91.44) (xy 92.71 63.5)
+			(xy 92.71 91.44) (xy 92.71 57.15)
 		)
 		(stroke
 			(width 0.2032)
@@ -1166,7 +1177,7 @@
 	)
 	(wire
 		(pts
-			(xy 92.71 102.87) (xy 92.71 121.92)
+			(xy 92.71 102.87) (xy 92.71 142.24)
 		)
 		(stroke
 			(width 0.2032)
@@ -1221,7 +1232,7 @@
 	)
 	(wire
 		(pts
-			(xy 208.28 82.55) (xy 208.28 63.5)
+			(xy 208.28 82.55) (xy 208.28 57.15)
 		)
 		(stroke
 			(width 0.2032)
@@ -1315,7 +1326,7 @@
 	)
 	(hierarchical_label "Strain2-"
 		(shape input)
-		(at 189.23 121.92 270)
+		(at 189.23 142.24 270)
 		(effects
 			(font
 				(size 1.27 1.27)
@@ -1326,7 +1337,7 @@
 	)
 	(hierarchical_label "Strain1-"
 		(shape input)
-		(at 115.57 63.5 90)
+		(at 115.57 57.15 90)
 		(effects
 			(font
 				(size 1.27 1.27)
@@ -1337,7 +1348,7 @@
 	)
 	(hierarchical_label "VAA"
 		(shape input)
-		(at 92.71 63.5 90)
+		(at 92.71 57.15 90)
 		(effects
 			(font
 				(size 1.27 1.27)
@@ -1348,7 +1359,7 @@
 	)
 	(hierarchical_label "GNDA"
 		(shape input)
-		(at 92.71 121.92 270)
+		(at 92.71 142.24 270)
 		(effects
 			(font
 				(size 1.27 1.27)
@@ -1359,7 +1370,7 @@
 	)
 	(hierarchical_label "GNDA"
 		(shape input)
-		(at 217.17 121.92 270)
+		(at 217.17 142.24 270)
 		(effects
 			(font
 				(size 1.27 1.27)
@@ -1381,7 +1392,7 @@
 	)
 	(hierarchical_label "Strain1+"
 		(shape input)
-		(at 97.79 63.5 90)
+		(at 97.79 57.15 90)
 		(effects
 			(font
 				(size 1.27 1.27)
@@ -1392,7 +1403,7 @@
 	)
 	(hierarchical_label "VAA"
 		(shape input)
-		(at 208.28 63.5 90)
+		(at 208.28 57.15 90)
 		(effects
 			(font
 				(size 1.27 1.27)
@@ -1414,7 +1425,7 @@
 	)
 	(hierarchical_label "Strain2+"
 		(shape input)
-		(at 175.26 121.92 270)
+		(at 175.26 142.24 270)
 		(effects
 			(font
 				(size 1.27 1.27)
@@ -1425,7 +1436,7 @@
 	)
 	(hierarchical_label "VREF"
 		(shape input)
-		(at 113.03 121.92 270)
+		(at 113.03 142.24 270)
 		(effects
 			(font
 				(size 1.27 1.27)
@@ -1533,7 +1544,7 @@
 				)
 			)
 		)
-		(property "Value" "99"
+		(property "Value" "-"
 			(at 107.95 82.804 90)
 			(effects
 				(font
@@ -1603,7 +1614,6 @@
 		(in_bom yes)
 		(on_board yes)
 		(dnp no)
-		(fields_autoplaced yes)
 		(uuid "7898ba5a-4568-4eb6-98f5-660a0d63937a")
 		(property "Reference" "U3"
 			(at 147.32 72.39 0)
@@ -1737,7 +1747,7 @@
 				)
 			)
 		)
-		(property "Value" "99"
+		(property "Value" "-"
 			(at 181.61 100.076 90)
 			(effects
 				(font

@@ -558,24 +558,6 @@
 						)
 					)
 				)
-				(pin power_in line
-					(at 20.32 -7.62 0)
-					(length 7.62)
-					(name "GND"
-						(effects
-							(font
-								(size 1.27 1.27)
-							)
-						)
-					)
-					(number "4"
-						(effects
-							(font
-								(size 1.27 1.27)
-							)
-						)
-					)
-				)
 				(pin unspecified line
 					(at 60.96 0 180)
 					(length 7.62)
@@ -668,6 +650,24 @@
 						)
 					)
 				)
+				(pin power_out line
+					(at 20.32 -7.62 0)
+					(length 7.62)
+					(name "GND"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "4"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+				)
 				(pin power_in line
 					(at 60.96 -2.54 180)
 					(length 7.62)
@@ -691,8 +691,8 @@
 		)
 	)
 	(rectangle
-		(start 99.06 67.31)
-		(end 203.2 116.84)
+		(start 92.71 67.31)
+		(end 204.47 129.54)
 		(stroke
 			(width 0)
 			(type default)
@@ -701,6 +701,16 @@
 			(type none)
 		)
 		(uuid e9308048-a35b-4e79-850c-91f920d666cc)
+	)
+	(text "Cin\n1206-3216"
+		(exclude_from_sim no)
+		(at 100.076 101.6 0)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+		)
+		(uuid "4cfe1d2a-3f77-4443-9a45-b1a309d037cc")
 	)
 	(text "LDO Regulator\n"
 		(exclude_from_sim no)
@@ -715,6 +725,16 @@
 		)
 		(uuid "51a9476c-b094-4793-97ce-4ec51be887f8")
 	)
+	(text "Cout\n1206-3216"
+		(exclude_from_sim no)
+		(at 198.12 85.09 0)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+		)
+		(uuid "b03d35fd-d8ec-4b65-a459-8a11dc9f9175")
+	)
 	(text "* see notebook in documentation \ndirectory for complete calculations"
 		(exclude_from_sim no)
 		(at 128.27 75.438 0)
@@ -726,9 +746,9 @@
 		)
 		(uuid "b641c953-969b-4e64-b233-de5b5d800f7d")
 	)
-	(text "VOUT = Vfb * (1 + R1/R2)\nR1_5V_A_CHOSEN_EQUIV = 322.000 kΩ\nVOUT_5V = 5.001 V\n\n"
+	(text "VOUT = Vfb * (1 + R1/R2)\n\nR1_CHOSEN_EQUIV = 178.5 kΩ\nVOUT = 1.185 * (1 + 178.5 / 100) = 3.300225 V\n\nR1_CHOSEN_STD_EQUIV = 100 kΩ + 78.7 kΩ = 178.7 kΩ\nVOUT = 1.185 * (1 + 178.7 / 100) = 3.302595 V\n"
 		(exclude_from_sim no)
-		(at 165.354 114.808 0)
+		(at 134.62 121.158 0)
 		(effects
 			(font
 				(size 0.889 0.889)
@@ -767,6 +787,12 @@
 		(uuid "1e9840ab-c878-474a-93ba-700220ac60b4")
 	)
 	(junction
+		(at 106.68 92.71)
+		(diameter 0)
+		(color 194 0 194 1)
+		(uuid "2738d23f-6fc0-4dbd-af6b-7c1c534af0bb")
+	)
+	(junction
 		(at 140.97 110.49)
 		(diameter 0)
 		(color 128 77 0 1)
@@ -785,7 +811,7 @@
 		(uuid "84724b66-0864-43aa-8ed6-6e940575c454")
 	)
 	(junction
-		(at 107.95 110.49)
+		(at 106.68 110.49)
 		(diameter 0)
 		(color 0 0 0 1)
 		(uuid "931bfe50-8aa1-4f28-a104-14a1961c4151")
@@ -813,6 +839,12 @@
 		(diameter 0)
 		(color 194 0 0 1)
 		(uuid "e0167ca3-fedb-46ac-8dc1-37166243c23c")
+	)
+	(junction
+		(at 106.68 100.33)
+		(diameter 0)
+		(color 194 0 194 1)
+		(uuid "fb7c427c-14de-4b1d-bd5c-c1cfcbd107de")
 	)
 	(junction
 		(at 177.8 92.71)
@@ -848,6 +880,17 @@
 	)
 	(wire
 		(pts
+			(xy 106.68 92.71) (xy 106.68 100.33)
+		)
+		(stroke
+			(width 0.2032)
+			(type default)
+			(color 194 0 194 1)
+		)
+		(uuid "0a2c18da-60cd-4635-8482-b28fc1f2de86")
+	)
+	(wire
+		(pts
 			(xy 177.8 72.39) (xy 191.77 72.39)
 		)
 		(stroke
@@ -859,7 +902,7 @@
 	)
 	(wire
 		(pts
-			(xy 119.38 100.33) (xy 107.95 100.33)
+			(xy 119.38 100.33) (xy 106.68 100.33)
 		)
 		(stroke
 			(width 0.2032)
@@ -925,7 +968,7 @@
 	)
 	(wire
 		(pts
-			(xy 107.95 73.66) (xy 107.95 92.71)
+			(xy 106.68 73.66) (xy 106.68 92.71)
 		)
 		(stroke
 			(width 0.2032)
@@ -980,7 +1023,7 @@
 	)
 	(wire
 		(pts
-			(xy 107.95 110.49) (xy 107.95 107.95)
+			(xy 106.68 110.49) (xy 106.68 107.95)
 		)
 		(stroke
 			(width 0.2032)
@@ -991,7 +1034,7 @@
 	)
 	(wire
 		(pts
-			(xy 95.25 73.66) (xy 107.95 73.66)
+			(xy 91.44 73.66) (xy 106.68 73.66)
 		)
 		(stroke
 			(width 0.2032)
@@ -1002,7 +1045,7 @@
 	)
 	(wire
 		(pts
-			(xy 107.95 100.33) (xy 107.95 102.87)
+			(xy 106.68 100.33) (xy 106.68 102.87)
 		)
 		(stroke
 			(width 0.2032)
@@ -1013,7 +1056,7 @@
 	)
 	(wire
 		(pts
-			(xy 95.25 110.49) (xy 107.95 110.49)
+			(xy 91.44 110.49) (xy 106.68 110.49)
 		)
 		(stroke
 			(width 0.2032)
@@ -1101,7 +1144,7 @@
 	)
 	(wire
 		(pts
-			(xy 107.95 110.49) (xy 111.76 110.49)
+			(xy 106.68 110.49) (xy 111.76 110.49)
 		)
 		(stroke
 			(width 0.2032)
@@ -1112,7 +1155,7 @@
 	)
 	(wire
 		(pts
-			(xy 191.77 72.39) (xy 204.47 72.39)
+			(xy 191.77 72.39) (xy 205.74 72.39)
 		)
 		(stroke
 			(width 0.2032)
@@ -1167,7 +1210,7 @@
 	)
 	(wire
 		(pts
-			(xy 165.1 92.71) (xy 165.1 90.17)
+			(xy 165.1 92.71) (xy 165.1 85.09)
 		)
 		(stroke
 			(width 0.2032)
@@ -1178,7 +1221,7 @@
 	)
 	(wire
 		(pts
-			(xy 191.77 110.49) (xy 199.39 110.49)
+			(xy 191.77 110.49) (xy 205.74 110.49)
 		)
 		(stroke
 			(width 0.2032)
@@ -1211,7 +1254,7 @@
 	)
 	(wire
 		(pts
-			(xy 165.1 72.39) (xy 165.1 85.09)
+			(xy 165.1 72.39) (xy 165.1 80.01)
 		)
 		(stroke
 			(width 0.2032)
@@ -1222,7 +1265,7 @@
 	)
 	(wire
 		(pts
-			(xy 107.95 92.71) (xy 119.38 92.71)
+			(xy 106.68 92.71) (xy 119.38 92.71)
 		)
 		(stroke
 			(width 0.2032)
@@ -1253,7 +1296,7 @@
 	)
 	(hierarchical_label "VIN"
 		(shape input)
-		(at 95.25 73.66 180)
+		(at 91.44 73.66 180)
 		(effects
 			(font
 				(size 1.27 1.27)
@@ -1262,9 +1305,9 @@
 		)
 		(uuid "15204aa1-1ab4-42ee-a508-ab9ddbf616e3")
 	)
-	(hierarchical_label "GNDD"
+	(hierarchical_label "GND"
 		(shape input)
-		(at 95.25 110.49 180)
+		(at 91.44 110.49 180)
 		(effects
 			(font
 				(size 1.27 1.27)
@@ -1275,7 +1318,7 @@
 	)
 	(hierarchical_label "VAA"
 		(shape input)
-		(at 204.47 72.39 0)
+		(at 205.74 72.39 0)
 		(effects
 			(font
 				(size 1.27 1.27)
@@ -1286,7 +1329,7 @@
 	)
 	(hierarchical_label "GNDA"
 		(shape input)
-		(at 199.39 110.49 0)
+		(at 205.74 110.49 0)
 		(effects
 			(font
 				(size 1.27 1.27)
@@ -1297,7 +1340,7 @@
 	)
 	(symbol
 		(lib_id "Device:C_Small")
-		(at 107.95 105.41 0)
+		(at 106.68 105.41 0)
 		(mirror x)
 		(unit 1)
 		(exclude_from_sim no)
@@ -1305,8 +1348,8 @@
 		(on_board yes)
 		(dnp no)
 		(uuid "280979d7-7960-4673-869c-4b207aeaf2ce")
-		(property "Reference" "C34"
-			(at 105.41 104.902 0)
+		(property "Reference" "C36"
+			(at 104.14 104.902 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -1315,7 +1358,7 @@
 			)
 		)
 		(property "Value" "10u X7R"
-			(at 107.696 107.442 0)
+			(at 106.426 107.442 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -1323,8 +1366,8 @@
 				(justify right)
 			)
 		)
-		(property "Footprint" "Capacitor_SMD:C_1206_3216Metric"
-			(at 107.95 105.41 0)
+		(property "Footprint" "Capacitor_SMD:C_1206_3216Metric_Pad1.33x1.80mm_HandSolder"
+			(at 106.68 105.41 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -1333,7 +1376,7 @@
 			)
 		)
 		(property "Datasheet" "~"
-			(at 107.95 105.41 0)
+			(at 106.68 105.41 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -1342,7 +1385,7 @@
 			)
 		)
 		(property "Description" ""
-			(at 107.95 105.41 0)
+			(at 106.68 105.41 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -1359,7 +1402,7 @@
 		(instances
 			(project "BREAD_Slice"
 				(path "/66043bca-a260-4915-9fce-8a51d324c687/ba2695dd-f9d0-4a9f-9d4e-ae711593256f"
-					(reference "C34")
+					(reference "C36")
 					(unit 1)
 				)
 			)
@@ -1374,7 +1417,7 @@
 		(on_board yes)
 		(dnp no)
 		(uuid "3e14ef30-eb25-481b-9a30-053d20837e9a")
-		(property "Reference" "C37"
+		(property "Reference" "C39"
 			(at 194.31 88.9 0)
 			(effects
 				(font
@@ -1392,7 +1435,7 @@
 				(justify right)
 			)
 		)
-		(property "Footprint" "Capacitor_SMD:C_1206_3216Metric"
+		(property "Footprint" "Capacitor_SMD:C_1206_3216Metric_Pad1.33x1.80mm_HandSolder"
 			(at 191.77 88.9 0)
 			(effects
 				(font
@@ -1428,7 +1471,7 @@
 		(instances
 			(project "BREAD_Slice"
 				(path "/66043bca-a260-4915-9fce-8a51d324c687/ba2695dd-f9d0-4a9f-9d4e-ae711593256f"
-					(reference "C37")
+					(reference "C39")
 					(unit 1)
 				)
 			)
@@ -1444,7 +1487,7 @@
 		(on_board yes)
 		(dnp no)
 		(uuid "839b3fe9-3699-4a4d-95b1-4cecaa676f09")
-		(property "Reference" "R28"
+		(property "Reference" "R30"
 			(at 181.356 99.06 0)
 			(effects
 				(font
@@ -1452,15 +1495,15 @@
 				)
 			)
 		)
-		(property "Value" "100k"
-			(at 181.864 100.838 0)
+		(property "Value" "100k 1%"
+			(at 183.642 101.092 0)
 			(effects
 				(font
 					(size 1.27 1.27)
 				)
 			)
 		)
-		(property "Footprint" ""
+		(property "Footprint" "Resistor_SMD:R_0805_2012Metric_Pad1.20x1.40mm_HandSolder"
 			(at 176.022 100.33 90)
 			(effects
 				(font
@@ -1496,7 +1539,7 @@
 		(instances
 			(project "BREAD_Slice"
 				(path "/66043bca-a260-4915-9fce-8a51d324c687/ba2695dd-f9d0-4a9f-9d4e-ae711593256f"
-					(reference "R28")
+					(reference "R30")
 					(unit 1)
 				)
 			)
@@ -1511,7 +1554,7 @@
 		(on_board yes)
 		(dnp no)
 		(uuid "aff9ee13-adcd-4d62-baeb-1ff2de4e7f4b")
-		(property "Reference" "C35"
+		(property "Reference" "C37"
 			(at 111.252 94.234 90)
 			(effects
 				(font
@@ -1527,7 +1570,7 @@
 				)
 			)
 		)
-		(property "Footprint" "Capacitor_SMD:C_1206_3216Metric"
+		(property "Footprint" "Capacitor_SMD:C_0603_1608Metric_Pad1.08x0.95mm_HandSolder"
 			(at 116.84 97.79 0)
 			(effects
 				(font
@@ -1563,7 +1606,7 @@
 		(instances
 			(project "BREAD_Slice"
 				(path "/66043bca-a260-4915-9fce-8a51d324c687/ba2695dd-f9d0-4a9f-9d4e-ae711593256f"
-					(reference "C35")
+					(reference "C37")
 					(unit 1)
 				)
 			)
@@ -1579,7 +1622,7 @@
 		(on_board yes)
 		(dnp no)
 		(uuid "b4be3e89-c973-410a-83e0-79ddc30d0de5")
-		(property "Reference" "R27"
+		(property "Reference" "R28"
 			(at 181.356 76.2 0)
 			(effects
 				(font
@@ -1587,15 +1630,15 @@
 				)
 			)
 		)
-		(property "Value" "300k"
-			(at 181.864 78.232 0)
+		(property "Value" "300k 1%"
+			(at 183.642 78.232 0)
 			(effects
 				(font
 					(size 1.27 1.27)
 				)
 			)
 		)
-		(property "Footprint" ""
+		(property "Footprint" "Resistor_SMD:R_0805_2012Metric_Pad1.20x1.40mm_HandSolder"
 			(at 176.022 77.47 90)
 			(effects
 				(font
@@ -1631,7 +1674,7 @@
 		(instances
 			(project "BREAD_Slice"
 				(path "/66043bca-a260-4915-9fce-8a51d324c687/ba2695dd-f9d0-4a9f-9d4e-ae711593256f"
-					(reference "R27")
+					(reference "R28")
 					(unit 1)
 				)
 			)
@@ -1647,7 +1690,7 @@
 		(on_board yes)
 		(dnp no)
 		(uuid "b8ef9c04-408f-499b-a81a-654932efb020")
-		(property "Reference" "U8"
+		(property "Reference" "U9"
 			(at 139.7 80.01 0)
 			(effects
 				(font
@@ -1722,7 +1765,7 @@
 		(instances
 			(project "BREAD_Slice"
 				(path "/66043bca-a260-4915-9fce-8a51d324c687/ba2695dd-f9d0-4a9f-9d4e-ae711593256f"
-					(reference "U8")
+					(reference "U9")
 					(unit 1)
 				)
 			)
@@ -1730,7 +1773,7 @@
 	)
 	(symbol
 		(lib_id "Device:C_Small")
-		(at 165.1 87.63 180)
+		(at 165.1 82.55 180)
 		(unit 1)
 		(exclude_from_sim no)
 		(in_bom yes)
@@ -1738,8 +1781,8 @@
 		(dnp no)
 		(fields_autoplaced yes)
 		(uuid "bdf47267-f8cb-49d4-8516-471cecb1a2c9")
-		(property "Reference" "C36"
-			(at 167.64 86.3535 0)
+		(property "Reference" "C38"
+			(at 167.64 81.2735 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -1748,7 +1791,7 @@
 			)
 		)
 		(property "Value" "10n X7R"
-			(at 167.64 88.8935 0)
+			(at 167.64 83.8135 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -1756,8 +1799,8 @@
 				(justify right)
 			)
 		)
-		(property "Footprint" "Capacitor_SMD:C_1206_3216Metric"
-			(at 165.1 87.63 0)
+		(property "Footprint" "Capacitor_SMD:C_0603_1608Metric_Pad1.08x0.95mm_HandSolder"
+			(at 165.1 82.55 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -1766,7 +1809,7 @@
 			)
 		)
 		(property "Datasheet" "~"
-			(at 165.1 87.63 0)
+			(at 165.1 82.55 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -1775,7 +1818,7 @@
 			)
 		)
 		(property "Description" ""
-			(at 165.1 87.63 0)
+			(at 165.1 82.55 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -1792,7 +1835,7 @@
 		(instances
 			(project "BREAD_Slice"
 				(path "/66043bca-a260-4915-9fce-8a51d324c687/ba2695dd-f9d0-4a9f-9d4e-ae711593256f"
-					(reference "C36")
+					(reference "C38")
 					(unit 1)
 				)
 			)
@@ -1824,7 +1867,7 @@
 				)
 			)
 		)
-		(property "Footprint" ""
+		(property "Footprint" "Resistor_SMD:R_0805_2012Metric_Pad1.20x1.40mm_HandSolder"
 			(at 176.022 87.63 90)
 			(effects
 				(font
@@ -1875,7 +1918,7 @@
 		(on_board yes)
 		(dnp no)
 		(uuid "feee1a54-a0f4-4fe6-8ba7-044273bee089")
-		(property "Reference" "NT2"
+		(property "Reference" "NT3"
 			(at 137.922 108.712 0)
 			(effects
 				(font
@@ -1928,7 +1971,7 @@
 		(instances
 			(project "BREAD_Slice"
 				(path "/66043bca-a260-4915-9fce-8a51d324c687/ba2695dd-f9d0-4a9f-9d4e-ae711593256f"
-					(reference "NT2")
+					(reference "NT3")
 					(unit 1)
 				)
 			)

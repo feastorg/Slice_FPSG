@@ -37,9 +37,9 @@
         "other_text_thickness": 0.15,
         "other_text_upright": false,
         "pads": {
-          "drill": 5e-06,
-          "height": 1e-05,
-          "width": 1e-05
+          "drill": 0.0,
+          "height": 1.4,
+          "width": 1.2
         },
         "silk_line_width": 0.12,
         "silk_text_italic": false,
@@ -195,6 +195,7 @@
       ],
       "track_widths": [
         0.0,
+        0.4,
         0.5,
         1.0,
         1.5,
@@ -233,7 +234,11 @@
         },
         {
           "diameter": 0.5,
-          "drill": 0.0
+          "drill": 0.25
+        },
+        {
+          "diameter": 0.6,
+          "drill": 0.3
         },
         {
           "diameter": 1.0,
@@ -497,7 +502,7 @@
     "classes": [
       {
         "bus_width": 12,
-        "clearance": 0.2,
+        "clearance": 0.14,
         "diff_pair_gap": 0.25,
         "diff_pair_via_gap": 0.25,
         "diff_pair_width": 0.2,
@@ -517,7 +522,6 @@
         "bus_width": 12,
         "clearance": 1.25,
         "diff_pair_gap": 0.25,
-        "diff_pair_via_gap": 0.25,
         "diff_pair_width": 0.2,
         "line_style": 1,
         "microvia_diameter": 0.3,
@@ -705,7 +709,7 @@
       "meta": {
         "version": 0
       },
-      "model_mode": 0,
+      "model_mode": 4,
       "workbook_filename": ""
     },
     "page_layout_descr_file": "",
@@ -728,19 +732,19 @@
     ],
     [
       "a83c9d89-e357-4154-b822-20364cfcbb55",
-      "AD8426 x2 Strain Gauge01"
+      "AD8426 x2 StrainGauge01"
     ],
     [
       "f9d511ac-c64f-419a-8aa5-fc4e0d2db040",
-      "AD8426 x2 Strain Gauge23"
+      "AD8426 x2 StrainGauge23"
     ],
     [
       "3c33af0a-0acf-464f-861c-4f5bdfe2369c",
-      "AD8426 x2 Strain Gauge45"
+      "AD8426 x2 StrainGauge45"
     ],
     [
       "fc1b9b2a-6a1c-44f1-a543-ca83aebc2df0",
-      "AD8426 x2 Strain Gauge67"
+      "AD8426 x2 StrainGauge67"
     ],
     [
       "e6a3e594-cd55-4428-a6c3-0bb2454de731",
@@ -748,7 +752,7 @@
     ],
     [
       "ba2695dd-f9d0-4a9f-9d4e-ae711593256f",
-      "TPS7A4901-5VA"
+      "TPS7A4901-3V3ADC"
     ],
     [
       "33ca6dac-f7af-474a-a4ff-efb912331bf6",

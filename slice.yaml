@@ -1,0 +1,160 @@
+schema_version: "1.0"
+
+# ── Identity ──────────────────────────────────────────────────────────────────
+id: "slice-fpsg"
+name: "Full-Bridge Programmable Strain Gauge Amplifier"
+status: "prototype"
+category: "sensing"
+
+summary: "6-channel full-bridge strain gauge amplifier with AD8426 instrumentation amp and SD logging."
+description: null
+
+# ── Versioning ────────────────────────────────────────────────────────────────
+version:
+  hardware: "0.1.0"
+  firmware: null
+  manifest: "0.1.0"
+
+# ── Compatibility ─────────────────────────────────────────────────────────────
+compatibility:
+  slice_spec: ">=0.1.0 <0.2.0"
+  crumbs_protocol: null
+  anolis_provider_api: null
+
+# ── Hardware ──────────────────────────────────────────────────────────────────
+hardware:
+  mcu:
+    type: "dev-board-socket"
+    form_factor: "nano"
+    primary: "ATmega328P"
+    supported:
+      - "ATmega328P"
+  primary_ic:
+    manufacturer: "Analog Devices"
+    part_number: "AD8426"
+  hw_gen_current: 1
+  hw_gen_supported: [1]
+  pcb:
+    layers: 4
+    thickness: "1.6mm"
+    copper_weight: "1oz"
+    dimensions: "70mm x 100mm"
+  connectors:
+    - ref: "J1"
+      type: "slice-bus-10pin"
+      purpose: "power-and-i2c"
+    - ref: "J_M12"
+      type: "M12-4pin"
+      purpose: "load cell full-bridge connection"
+  mounting:
+    pattern: "slice-standard-v0"
+    hole_size: "M3"
+    inset: "5mm"
+  pcb_color_prototype: null
+  pcb_color_production: null
+  enclosure:
+    supported: false
+    path: null
+
+# ── Electrical ────────────────────────────────────────────────────────────────
+electrical:
+  input_voltage: "12V"
+  logic_voltage: "5V"
+  max_current: null
+  protection: null
+  isolation: null
+
+# ── Interfaces ────────────────────────────────────────────────────────────────
+interfaces:
+  host:
+    type: "i2c"
+    address_default: null
+    address_configurable: false
+  data:
+    inputs:
+      - name: "SG1"
+        type: "full-bridge-strain-gauge"
+      - name: "SG2"
+        type: "full-bridge-strain-gauge"
+      - name: "SG3"
+        type: "full-bridge-strain-gauge"
+      - name: "SG4"
+        type: "full-bridge-strain-gauge"
+      - name: "SG5"
+        type: "full-bridge-strain-gauge"
+      - name: "SG6"
+        type: "full-bridge-strain-gauge"
+    outputs: []
+
+# ── Capabilities ──────────────────────────────────────────────────────────────
+capabilities:
+  - id: "strain_gauge_measurement"
+    channels: 6
+    control_modes: []
+
+# ── Firmware ──────────────────────────────────────────────────────────────────
+firmware: null
+
+# ── Protocol ──────────────────────────────────────────────────────────────────
+protocol: null
+
+# ── Software ──────────────────────────────────────────────────────────────────
+software: null
+
+# ── Artifacts ─────────────────────────────────────────────────────────────────
+artifacts:
+  schematic: "hardware/BREAD_Slice.kicad_sch"
+  pcb: "hardware/BREAD_Slice.kicad_pcb"
+  firmware: null
+  docs: null
+  bom: "documentation/BOM_TEMP.ods"
+  gerbers: "hardware/Gerbers.zip"
+  pick_and_place: null
+  datasheets:
+    - "documentation/1914-D 6CH Femur Load Cell.pdf"
+
+# ── Manufacturing ─────────────────────────────────────────────────────────────
+manufacturing: null
+
+# ── Validation ────────────────────────────────────────────────────────────────
+validation: null
+
+# ── Safety ────────────────────────────────────────────────────────────────────
+safety: null
+
+# ── Dependencies ──────────────────────────────────────────────────────────────
+dependencies: null
+
+# ── Relations ─────────────────────────────────────────────────────────────────
+related:
+  supersedes: null
+  superseded_by: null
+  variants: []
+  compatible_slices:
+    - "slice-load"
+
+# ── Maintainers ───────────────────────────────────────────────────────────────
+maintainers:
+  - name: "Cameron Brooks"
+    role: "owner"
+
+# ── License ───────────────────────────────────────────────────────────────────
+license:
+  hardware: "CERN-OHL-S-2.0"
+  firmware: null
+  software: null
+  docs: "CC-BY-4.0"
+
+# ── Repository ────────────────────────────────────────────────────────────────
+repository:
+  url: "https://github.com/feastorg/Slice_FPSG"
+
+# ── Metadata ──────────────────────────────────────────────────────────────────
+metadata:
+  created: "2026-05-19"
+  updated: "2026-05-19"
+  tags:
+    - "strain-gauge"
+    - "load-cell"
+    - "instrumentation-amplifier"
+    - "force-measurement"

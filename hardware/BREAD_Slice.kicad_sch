@@ -2143,7 +2143,7 @@
 			)
 			(embedded_fonts no)
 		)
-		(symbol "SparkFun-DiscreteSemi:AP63205"
+		(symbol "KMLib_IC_Power:AP63205WU-7_Buck_Regulator"
 			(exclude_from_sim no)
 			(in_bom yes)
 			(on_board yes)
@@ -2609,7 +2609,7 @@
 			)
 			(embedded_fonts no)
 		)
-		(symbol "kml-custom:1439890"
+		(symbol "KMLib_Connectors:1439890"
 			(exclude_from_sim no)
 			(in_bom yes)
 			(on_board yes)
@@ -2855,7 +2855,7 @@
 			)
 			(embedded_fonts no)
 		)
-		(symbol "kml-custom:ADS131M08IPBS"
+		(symbol "KMLib_IC_Analog:ADS131M08IPBS_24-bit_ADC"
 			(exclude_from_sim no)
 			(in_bom yes)
 			(on_board yes)
@@ -3569,7 +3569,7 @@
 			)
 			(embedded_fonts no)
 		)
-		(symbol "kml-custom:NUCLEO-L432KC"
+		(symbol "KMLib_IC_MCU_MPU:NUCLEO-L432KC"
 			(pin_names
 				(offset 1.016)
 			)
@@ -13255,7 +13255,7 @@
 				(justify left)
 			)
 		)
-		(property "Footprint" "kml-custom:Thermal Pad"
+		(property "Footprint" "KMLib_Mounting:Thermal_Pad"
 			(at 35.8648 95.25 0)
 			(hide yes)
 			(show_name no)
@@ -13786,7 +13786,7 @@
 		)
 	)
 	(symbol
-		(lib_id "kml-custom:1439890")
+		(lib_id "KMLib_Connectors:1439890")
 		(at 117.602 76.962 0)
 		(mirror y)
 		(unit 1)
@@ -16392,7 +16392,7 @@
 		)
 	)
 	(symbol
-		(lib_id "SparkFun-DiscreteSemi:AP63205")
+		(lib_id "KMLib_IC_Power:AP63205WU-7_Buck_Regulator")
 		(at 35.56 71.12 0)
 		(unit 1)
 		(body_style 1)
@@ -16592,7 +16592,7 @@
 				)
 			)
 		)
-		(property "Footprint" "SparkFun-LED:WS2812-5050-4PIN"
+		(property "Footprint" "KMLib_IC_SMD:WS2812-5050-4PIN"
 			(at 13.97 40.64 0)
 			(hide yes)
 			(show_name no)
@@ -17125,7 +17125,7 @@
 		)
 	)
 	(symbol
-		(lib_id "kml-custom:1439890")
+		(lib_id "KMLib_Connectors:1439890")
 		(at 117.602 163.322 0)
 		(mirror y)
 		(unit 1)
@@ -18317,7 +18317,7 @@
 		)
 	)
 	(symbol
-		(lib_id "kml-custom:1439890")
+		(lib_id "KMLib_Connectors:1439890")
 		(at 99.822 55.372 0)
 		(unit 1)
 		(body_style 1)
@@ -19280,7 +19280,7 @@
 		)
 	)
 	(symbol
-		(lib_id "kml-custom:1439890")
+		(lib_id "KMLib_Connectors:1439890")
 		(at 117.602 33.782 0)
 		(mirror y)
 		(unit 1)
@@ -19437,7 +19437,7 @@
 		)
 	)
 	(symbol
-		(lib_id "kml-custom:ADS131M08IPBS")
+		(lib_id "KMLib_IC_Analog:ADS131M08IPBS_24-bit_ADC")
 		(at 222.25 52.07 0)
 		(unit 1)
 		(body_style 1)
@@ -19467,7 +19467,7 @@
 				)
 			)
 		)
-		(property "Footprint" "kml-custom:QFP50P700X700X120-32N"
+		(property "Footprint" "KMLib_IC_SMD:QFP50P700X700X120-32N"
 			(at 256.54 136.83 0)
 			(hide yes)
 			(show_name no)
@@ -20841,7 +20841,7 @@
 		)
 	)
 	(symbol
-		(lib_id "kml-custom:1439890")
+		(lib_id "KMLib_Connectors:1439890")
 		(at 99.822 141.732 0)
 		(unit 1)
 		(body_style 1)
@@ -22004,7 +22004,7 @@
 		)
 	)
 	(symbol
-		(lib_id "kml-custom:NUCLEO-L432KC")
+		(lib_id "KMLib_IC_MCU_MPU:NUCLEO-L432KC")
 		(at 40.64 172.72 0)
 		(unit 2)
 		(body_style 1)
@@ -22035,7 +22035,7 @@
 				)
 			)
 		)
-		(property "Footprint" "kml-custom:MODULE_NUCLEO-L432KC"
+		(property "Footprint" "KMLib_Boards_Modules:MODULE_NUCLEO-L432KC"
 			(at 40.64 172.72 0)
 			(hide yes)
 			(show_name no)
@@ -22812,7 +22812,7 @@
 		)
 	)
 	(symbol
-		(lib_id "kml-custom:NUCLEO-L432KC")
+		(lib_id "KMLib_IC_MCU_MPU:NUCLEO-L432KC")
 		(at 40.64 135.89 0)
 		(unit 1)
 		(body_style 1)
@@ -22842,7 +22842,7 @@
 				)
 			)
 		)
-		(property "Footprint" "kml-custom:MODULE_NUCLEO-L432KC"
+		(property "Footprint" "KMLib_Boards_Modules:MODULE_NUCLEO-L432KC"
 			(at 40.64 135.89 0)
 			(hide yes)
 			(show_name no)
@@ -23905,7 +23905,7 @@
 		)
 	)
 	(symbol
-		(lib_id "kml-custom:1439890")
+		(lib_id "KMLib_Connectors:1439890")
 		(at 99.822 184.912 0)
 		(unit 1)
 		(body_style 1)
@@ -25468,7 +25468,7 @@
 		)
 	)
 	(symbol
-		(lib_id "kml-custom:1439890")
+		(lib_id "KMLib_Connectors:1439890")
 		(at 117.602 120.142 0)
 		(mirror y)
 		(unit 1)
@@ -26018,7 +26018,7 @@
 		)
 	)
 	(symbol
-		(lib_id "kml-custom:1439890")
+		(lib_id "KMLib_Connectors:1439890")
 		(at 99.822 98.552 0)
 		(unit 1)
 		(body_style 1)

@@ -443,7 +443,7 @@
 			)
 			(embedded_fonts no)
 		)
-		(symbol "kml-custom:TPS7A4901DGNR"
+		(symbol "KMLib_IC_Power:TPS7A4901DGNR_LDO_Regulator"
 			(pin_names
 				(offset 0.254)
 			)
@@ -2133,7 +2133,7 @@
 		)
 	)
 	(symbol
-		(lib_id "kml-custom:TPS7A4901DGNR")
+		(lib_id "KMLib_IC_Power:TPS7A4901DGNR_LDO_Regulator")
 		(at 176.53 78.74 0)
 		(mirror y)
 		(unit 1)
@@ -2164,7 +2164,7 @@
 				)
 			)
 		)
-		(property "Footprint" "kml-custom:DGN8_1P89X1P57"
+		(property "Footprint" "KMLib_IC_SMD:DGN8_1P89X1P57"
 			(at 156.21 78.74 0)
 			(hide yes)
 			(show_name no)

@@ -1766,7 +1766,7 @@
 		)
 		(embedded_fonts no)
 	)
-	(footprint "kml-custom:MODULE_NUCLEO-L432KC"
+	(footprint "KMLib_Boards_Modules:MODULE_NUCLEO-L432KC"
 		(layer "F.Cu")
 		(uuid "00b56c7e-f5a8-4e8e-b472-ec15ab2562b9")
 		(at 85.09 155.305)
@@ -6689,7 +6689,7 @@
 			)
 		)
 	)
-	(footprint "kml-custom:DGN8_1P89X1P57"
+	(footprint "KMLib_IC_SMD:DGN8_1P89X1P57"
 		(layer "F.Cu")
 		(uuid "363d0f57-0a7a-43d6-9688-1f0a0678c805")
 		(at 74.6 120.75 180)
@@ -7764,7 +7764,7 @@
 			)
 		)
 	)
-	(footprint "kml-custom:Thermal Pad"
+	(footprint "KMLib_Mounting:Thermal_Pad"
 		(layer "F.Cu")
 		(uuid "38381eea-040a-4a8c-8633-828364502ac8")
 		(at 66.774465 162.653932)
@@ -8260,7 +8260,7 @@
 			)
 		)
 	)
-	(footprint "kml-custom:1439890"
+	(footprint "KMLib_Connectors:1439890"
 		(layer "F.Cu")
 		(uuid "409f412c-fc84-4ee0-89f7-de368d25548d")
 		(at 126.48 168.715)
@@ -8691,7 +8691,7 @@
 			)
 		)
 	)
-	(footprint "kml-custom:CP_16_19_ADI"
+	(footprint "KMLib_IC_SMD:CP_16_19_ADI"
 		(layer "F.Cu")
 		(uuid "42e4680c-d66d-4291-b81d-2dcc99784693")
 		(at 131.25 103.15 90)
@@ -10187,7 +10187,7 @@
 			)
 		)
 	)
-	(footprint "kml-custom:1439890"
+	(footprint "KMLib_Connectors:1439890"
 		(layer "F.Cu")
 		(uuid "481141ab-11c1-4f3d-ae08-85008469695c")
 		(at 143.505 106.755 90)
@@ -11291,7 +11291,7 @@
 			)
 		)
 	)
-	(footprint "SparkFun-LED:WS2812-5050-4PIN"
+	(footprint "KMLib_IC_SMD:WS2812-5050-4PIN"
 		(locked yes)
 		(layer "F.Cu")
 		(uuid "4ec4e171-1549-4997-8479-26c2f6f0dd92")
@@ -11987,7 +11987,7 @@
 			)
 		)
 	)
-	(footprint "kml-custom:1439890"
+	(footprint "KMLib_Connectors:1439890"
 		(layer "F.Cu")
 		(uuid "59b36af8-a6c4-4f12-9d0f-3cd56f9d6aa4")
 		(at 143.53 128.83 90)
@@ -12618,7 +12618,7 @@
 			)
 		)
 	)
-	(footprint "kml-custom:CP_16_19_ADI"
+	(footprint "KMLib_IC_SMD:CP_16_19_ADI"
 		(layer "F.Cu")
 		(uuid "5bbbe5c8-47fa-4ca0-96f5-0cfb47fd95c7")
 		(at 135.1875 157.2625)
@@ -14515,7 +14515,7 @@
 			)
 		)
 	)
-	(footprint "kml-custom:1439890"
+	(footprint "KMLib_Connectors:1439890"
 		(layer "F.Cu")
 		(uuid "696220bc-6be0-4b2d-b386-1d3bd01c232a")
 		(at 148.545 168.73)
@@ -16305,7 +16305,7 @@
 			)
 		)
 	)
-	(footprint "kml-custom:QFP50P700X700X120-32N"
+	(footprint "KMLib_IC_SMD:QFP50P700X700X120-32N"
 		(layer "F.Cu")
 		(uuid "7c39af70-974d-4d9f-856c-8af2a74ef74d")
 		(at 111.125 125.9 180)
@@ -19976,7 +19976,7 @@
 			)
 		)
 	)
-	(footprint "kml-custom:1439890"
+	(footprint "KMLib_Connectors:1439890"
 		(layer "F.Cu")
 		(uuid "9ddd07db-cd12-48a6-9817-3bb7e62108c5")
 		(at 144.03 93.345 180)
@@ -21608,7 +21608,7 @@
 			)
 		)
 	)
-	(footprint "kml-custom:1439890"
+	(footprint "KMLib_Connectors:1439890"
 		(layer "F.Cu")
 		(uuid "b0429d14-3bd7-40c0-966b-46e28551d389")
 		(at 143.53 150.905 90)
@@ -23334,7 +23334,7 @@
 			)
 		)
 	)
-	(footprint "kml-custom:CP_16_19_ADI"
+	(footprint "KMLib_IC_SMD:CP_16_19_ADI"
 		(layer "F.Cu")
 		(uuid "cb960e94-6d4d-44fe-8b78-a36ae928f9be")
 		(at 131.575 142.008948 90)
@@ -25431,7 +25431,7 @@
 			)
 		)
 	)
-	(footprint "kml-custom:1439890"
+	(footprint "KMLib_Connectors:1439890"
 		(layer "F.Cu")
 		(uuid "e4b1bac8-eeff-4323-a38f-acb2922b12bf")
 		(at 121.955 93.345 180)
@@ -26062,7 +26062,7 @@
 			)
 		)
 	)
-	(footprint "kml-custom:DGN8_1P89X1P57"
+	(footprint "KMLib_IC_SMD:DGN8_1P89X1P57"
 		(layer "F.Cu")
 		(uuid "ed7094ae-a408-47fd-a07c-85892a76edd4")
 		(at 74.3795 106.400001 180)
@@ -26737,7 +26737,7 @@
 			)
 		)
 	)
-	(footprint "kml-custom:1439890"
+	(footprint "KMLib_Connectors:1439890"
 		(layer "F.Cu")
 		(uuid "f0727522-cbf6-4d55-b8d1-15ff18f50872")
 		(at 99.88 93.345 180)
@@ -27168,7 +27168,7 @@
 			)
 		)
 	)
-	(footprint "kml-custom:CP_16_19_ADI"
+	(footprint "KMLib_IC_SMD:CP_16_19_ADI"
 		(layer "F.Cu")
 		(uuid "f1ab8e36-33aa-4302-aedd-14c1a11aab2b")
 		(at 113.074999 104.9653 180)

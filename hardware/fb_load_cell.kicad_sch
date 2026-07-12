@@ -5,7 +5,7 @@
 	(uuid "8c954b4d-e52f-4c32-b6a2-f7bcf85f20d3")
 	(paper "A4")
 	(lib_symbols
-		(symbol "kml-custom:Full_Bridge_Strain_Gauge"
+		(symbol "KMLib_Sensors:Full_Bridge_Strain_Gauge"
 			(pin_numbers
 				(hide yes)
 			)
@@ -707,7 +707,7 @@
 		(uuid "92286e5e-192e-41d5-850d-b57ef36aa660")
 	)
 	(symbol
-		(lib_id "kml-custom:Full_Bridge_Strain_Gauge")
+		(lib_id "KMLib_Sensors:Full_Bridge_Strain_Gauge")
 		(at 121.92 80.01 0)
 		(unit 1)
 		(body_style 1)

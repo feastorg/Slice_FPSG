@@ -539,7 +539,7 @@
 					)
 				)
 			)
-			(symbol "TPS7A4901DGNR_0_1"
+			(symbol "TPS7A4901DGNR_LDO_Regulator_0_1"
 				(polyline
 					(pts
 						(xy 27.94 5.08) (xy 27.94 -15.24)
@@ -697,7 +697,7 @@
 					)
 				)
 			)
-			(symbol "TPS7A4901DGNR_1_1"
+			(symbol "TPS7A4901DGNR_LDO_Regulator_1_1"
 				(pin power_out line
 					(at 20.32 0 0)
 					(length 7.62)

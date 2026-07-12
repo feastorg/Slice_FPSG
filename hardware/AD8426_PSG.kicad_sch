@@ -396,7 +396,7 @@
 					)
 				)
 			)
-			(symbol "AD8426BCPZ-WP_0_1"
+			(symbol "AD8426BCPZ-WP_Instrumentation_Amplifier_0_1"
 				(polyline
 					(pts
 						(xy 7.62 5.08) (xy 7.62 -22.86)

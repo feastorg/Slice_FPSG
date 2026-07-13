@@ -2637,7 +2637,7 @@
 					(justify left top)
 				)
 			)
-			(property "Footprint" "1439890"
+			(property "Footprint" "KMLib_Connectors:1439890"
 				(at 6.096 -88.57 0)
 				(show_name no)
 				(do_not_autoplace no)
@@ -13820,7 +13820,7 @@
 				(justify left)
 			)
 		)
-		(property "Footprint" "1439890"
+		(property "Footprint" "KMLib_Connectors:1439890"
 			(at 101.092 166.802 0)
 			(hide yes)
 			(show_name no)
@@ -17159,7 +17159,7 @@
 				(justify left)
 			)
 		)
-		(property "Footprint" "1439890"
+		(property "Footprint" "KMLib_Connectors:1439890"
 			(at 101.092 253.162 0)
 			(hide yes)
 			(show_name no)
@@ -18350,7 +18350,7 @@
 				(justify left)
 			)
 		)
-		(property "Footprint" "1439890"
+		(property "Footprint" "KMLib_Connectors:1439890"
 			(at 116.332 145.212 0)
 			(hide yes)
 			(show_name no)
@@ -19314,7 +19314,7 @@
 				(justify left)
 			)
 		)
-		(property "Footprint" "1439890"
+		(property "Footprint" "KMLib_Connectors:1439890"
 			(at 101.092 123.622 0)
 			(hide yes)
 			(show_name no)
@@ -20874,7 +20874,7 @@
 				(justify left)
 			)
 		)
-		(property "Footprint" "1439890"
+		(property "Footprint" "KMLib_Connectors:1439890"
 			(at 116.332 231.572 0)
 			(hide yes)
 			(show_name no)
@@ -23938,7 +23938,7 @@
 				(justify left)
 			)
 		)
-		(property "Footprint" "1439890"
+		(property "Footprint" "KMLib_Connectors:1439890"
 			(at 116.332 274.752 0)
 			(hide yes)
 			(show_name no)
@@ -25502,7 +25502,7 @@
 				(justify left)
 			)
 		)
-		(property "Footprint" "1439890"
+		(property "Footprint" "KMLib_Connectors:1439890"
 			(at 101.092 209.982 0)
 			(hide yes)
 			(show_name no)
@@ -26051,7 +26051,7 @@
 				(justify left)
 			)
 		)
-		(property "Footprint" "1439890"
+		(property "Footprint" "KMLib_Connectors:1439890"
 			(at 116.332 188.392 0)
 			(hide yes)
 			(show_name no)

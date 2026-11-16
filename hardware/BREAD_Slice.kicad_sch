@@ -2609,7 +2609,7 @@
 			)
 			(embedded_fonts no)
 		)
-		(symbol "KMLib_Connectors:1439890"
+		(symbol "KMLib_Connectors:1439890_M12_5P"
 			(exclude_from_sim no)
 			(in_bom yes)
 			(on_board yes)
@@ -2732,7 +2732,7 @@
 					(justify left top)
 				)
 			)
-			(symbol "1439890_1_1"
+			(symbol "1439890_M12_5P_1_1"
 				(rectangle
 					(start 4.572 5.08)
 					(end 13.208 -3.81)
@@ -13786,7 +13786,7 @@
 		)
 	)
 	(symbol
-		(lib_id "KMLib_Connectors:1439890")
+		(lib_id "KMLib_Connectors:1439890_M12_5P")
 		(at 117.602 76.962 0)
 		(mirror y)
 		(unit 1)
@@ -17125,7 +17125,7 @@
 		)
 	)
 	(symbol
-		(lib_id "KMLib_Connectors:1439890")
+		(lib_id "KMLib_Connectors:1439890_M12_5P")
 		(at 117.602 163.322 0)
 		(mirror y)
 		(unit 1)
@@ -18317,7 +18317,7 @@
 		)
 	)
 	(symbol
-		(lib_id "KMLib_Connectors:1439890")
+		(lib_id "KMLib_Connectors:1439890_M12_5P")
 		(at 99.822 55.372 0)
 		(unit 1)
 		(body_style 1)
@@ -19280,7 +19280,7 @@
 		)
 	)
 	(symbol
-		(lib_id "KMLib_Connectors:1439890")
+		(lib_id "KMLib_Connectors:1439890_M12_5P")
 		(at 117.602 33.782 0)
 		(mirror y)
 		(unit 1)
@@ -20841,7 +20841,7 @@
 		)
 	)
 	(symbol
-		(lib_id "KMLib_Connectors:1439890")
+		(lib_id "KMLib_Connectors:1439890_M12_5P")
 		(at 99.822 141.732 0)
 		(unit 1)
 		(body_style 1)
@@ -23905,7 +23905,7 @@
 		)
 	)
 	(symbol
-		(lib_id "KMLib_Connectors:1439890")
+		(lib_id "KMLib_Connectors:1439890_M12_5P")
 		(at 99.822 184.912 0)
 		(unit 1)
 		(body_style 1)
@@ -25468,7 +25468,7 @@
 		)
 	)
 	(symbol
-		(lib_id "KMLib_Connectors:1439890")
+		(lib_id "KMLib_Connectors:1439890_M12_5P")
 		(at 117.602 120.142 0)
 		(mirror y)
 		(unit 1)
@@ -26018,7 +26018,7 @@
 		)
 	)
 	(symbol
-		(lib_id "KMLib_Connectors:1439890")
+		(lib_id "KMLib_Connectors:1439890_M12_5P")
 		(at 99.822 98.552 0)
 		(unit 1)
 		(body_style 1)

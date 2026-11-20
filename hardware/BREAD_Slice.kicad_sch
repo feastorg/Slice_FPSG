@@ -26869,7 +26869,7 @@
 			(color 0 0 0 0)
 		)
 		(uuid "e6a3e594-cd55-4428-a6c3-0bb2454de731")
-		(property "Sheetname" "TPS7A4901-VAA"
+		(property "Sheetname" "LT3045-VAA"
 			(at 189.23 81.8384 0)
 			(show_name no)
 			(do_not_autoplace no)
@@ -26880,7 +26880,7 @@
 				(justify left bottom)
 			)
 		)
-		(property "Sheetfile" "tps7a4901_adjustable.kicad_sch"
+		(property "Sheetfile" "lt3045_vaa.kicad_sch"
 			(at 177.038 101.346 0)
 			(show_name no)
 			(do_not_autoplace no)

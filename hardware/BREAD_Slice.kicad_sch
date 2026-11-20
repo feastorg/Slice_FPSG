@@ -12835,83 +12835,6 @@
 	)
 	(symbol
 		(lib_id "power:GNDA")
-		(at 156.21 189.23 0)
-		(unit 1)
-		(body_style 1)
-		(exclude_from_sim no)
-		(in_bom yes)
-		(on_board yes)
-		(in_pos_files yes)
-		(dnp no)
-		(uuid "165590bf-0cc0-4043-a13f-08d1c826c3fd")
-		(property "Reference" "#PWR086"
-			(at 156.21 195.58 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Value" "GNDA"
-			(at 156.21 193.04 0)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Footprint" ""
-			(at 156.21 189.23 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Datasheet" ""
-			(at 156.21 189.23 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Description" "Power symbol creates a global label with name \"GNDA\" , analog ground"
-			(at 156.21 189.23 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(pin "1"
-			(uuid "332d1b5d-bc04-4632-94b3-caf02407ef2e")
-		)
-		(instances
-			(project "BREAD_Slice"
-				(path "/66043bca-a260-4915-9fce-8a51d324c687"
-					(reference "#PWR086")
-					(unit 1)
-				)
-			)
-		)
-	)
-	(symbol
-		(lib_id "power:GNDA")
 		(at 86.36 191.77 0)
 		(unit 1)
 		(body_style 1)
@@ -15445,83 +15368,6 @@
 			(project "BREAD_Slice"
 				(path "/66043bca-a260-4915-9fce-8a51d324c687"
 					(reference "#PWR053")
-					(unit 1)
-				)
-			)
-		)
-	)
-	(symbol
-		(lib_id "power:GNDA")
-		(at 156.21 124.46 0)
-		(unit 1)
-		(body_style 1)
-		(exclude_from_sim no)
-		(in_bom yes)
-		(on_board yes)
-		(in_pos_files yes)
-		(dnp no)
-		(uuid "3cdbcdd0-8736-4293-85ce-3bb8b06a81a8")
-		(property "Reference" "#PWR083"
-			(at 156.21 130.81 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Value" "GNDA"
-			(at 156.21 128.27 0)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Footprint" ""
-			(at 156.21 124.46 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Datasheet" ""
-			(at 156.21 124.46 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Description" "Power symbol creates a global label with name \"GNDA\" , analog ground"
-			(at 156.21 124.46 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(pin "1"
-			(uuid "436ed884-7746-43c7-a327-be02d4419897")
-		)
-		(instances
-			(project "BREAD_Slice"
-				(path "/66043bca-a260-4915-9fce-8a51d324c687"
-					(reference "#PWR083")
 					(unit 1)
 				)
 			)
@@ -18240,83 +18086,6 @@
 		)
 	)
 	(symbol
-		(lib_id "power:GNDA")
-		(at 156.21 59.69 0)
-		(unit 1)
-		(body_style 1)
-		(exclude_from_sim no)
-		(in_bom yes)
-		(on_board yes)
-		(in_pos_files yes)
-		(dnp no)
-		(uuid "7b589eec-8c78-4fc5-9e5d-614d5577338c")
-		(property "Reference" "#PWR080"
-			(at 156.21 66.04 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Value" "GNDA"
-			(at 156.21 63.5 0)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Footprint" ""
-			(at 156.21 59.69 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Datasheet" ""
-			(at 156.21 59.69 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Description" "Power symbol creates a global label with name \"GNDA\" , analog ground"
-			(at 156.21 59.69 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(pin "1"
-			(uuid "e0d1a2f2-2979-4c53-9db0-3df45e5df057")
-		)
-		(instances
-			(project "BREAD_Slice"
-				(path "/66043bca-a260-4915-9fce-8a51d324c687"
-					(reference "#PWR080")
-					(unit 1)
-				)
-			)
-		)
-	)
-	(symbol
 		(lib_id "KMLib_Connectors:1439890_M12_5P")
 		(at 99.822 55.372 0)
 		(unit 1)
@@ -19748,83 +19517,6 @@
 	)
 	(symbol
 		(lib_id "power:GNDA")
-		(at 156.21 167.64 0)
-		(unit 1)
-		(body_style 1)
-		(exclude_from_sim no)
-		(in_bom yes)
-		(on_board yes)
-		(in_pos_files yes)
-		(dnp no)
-		(uuid "9de674d0-b776-4686-9598-a40ea784a34a")
-		(property "Reference" "#PWR085"
-			(at 156.21 173.99 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Value" "GNDA"
-			(at 156.21 171.45 0)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Footprint" ""
-			(at 156.21 167.64 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Datasheet" ""
-			(at 156.21 167.64 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Description" "Power symbol creates a global label with name \"GNDA\" , analog ground"
-			(at 156.21 167.64 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(pin "1"
-			(uuid "4d8a5f1b-337d-4cb1-aeaf-99e2e8a85d9d")
-		)
-		(instances
-			(project "BREAD_Slice"
-				(path "/66043bca-a260-4915-9fce-8a51d324c687"
-					(reference "#PWR085")
-					(unit 1)
-				)
-			)
-		)
-	)
-	(symbol
-		(lib_id "power:GNDA")
 		(at 115.57 34.29 0)
 		(mirror y)
 		(unit 1)
@@ -20051,83 +19743,6 @@
 			(project "BREAD_Slice"
 				(path "/66043bca-a260-4915-9fce-8a51d324c687"
 					(reference "#FLG04")
-					(unit 1)
-				)
-			)
-		)
-	)
-	(symbol
-		(lib_id "power:GNDA")
-		(at 156.21 146.05 0)
-		(unit 1)
-		(body_style 1)
-		(exclude_from_sim no)
-		(in_bom yes)
-		(on_board yes)
-		(in_pos_files yes)
-		(dnp no)
-		(uuid "a1d7a115-ce5e-4d64-8c63-e5269fbcd760")
-		(property "Reference" "#PWR084"
-			(at 156.21 152.4 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Value" "GNDA"
-			(at 156.21 149.86 0)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Footprint" ""
-			(at 156.21 146.05 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Datasheet" ""
-			(at 156.21 146.05 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Description" "Power symbol creates a global label with name \"GNDA\" , analog ground"
-			(at 156.21 146.05 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(pin "1"
-			(uuid "9354569c-0e3d-4afc-abef-63f797cda5b4")
-		)
-		(instances
-			(project "BREAD_Slice"
-				(path "/66043bca-a260-4915-9fce-8a51d324c687"
-					(reference "#PWR084")
 					(unit 1)
 				)
 			)
@@ -20521,83 +20136,6 @@
 	)
 	(symbol
 		(lib_id "power:GNDA")
-		(at 156.21 102.87 0)
-		(unit 1)
-		(body_style 1)
-		(exclude_from_sim no)
-		(in_bom yes)
-		(on_board yes)
-		(in_pos_files yes)
-		(dnp no)
-		(uuid "a8ec91d7-22e6-4e4e-ad99-a77e1a3eb7e1")
-		(property "Reference" "#PWR082"
-			(at 156.21 109.22 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Value" "GNDA"
-			(at 156.21 106.68 0)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Footprint" ""
-			(at 156.21 102.87 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Datasheet" ""
-			(at 156.21 102.87 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Description" "Power symbol creates a global label with name \"GNDA\" , analog ground"
-			(at 156.21 102.87 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(pin "1"
-			(uuid "d3722350-0ee8-48a5-a944-33ee7d45890c")
-		)
-		(instances
-			(project "BREAD_Slice"
-				(path "/66043bca-a260-4915-9fce-8a51d324c687"
-					(reference "#PWR082")
-					(unit 1)
-				)
-			)
-		)
-	)
-	(symbol
-		(lib_id "power:GNDD")
 		(at 269.24 149.86 0)
 		(unit 1)
 		(body_style 1)
@@ -20619,7 +20157,7 @@
 				)
 			)
 		)
-		(property "Value" "GNDD"
+		(property "Value" "GNDA"
 			(at 269.24 153.67 0)
 			(show_name no)
 			(do_not_autoplace no)
@@ -21223,83 +20761,6 @@
 			(project "BREAD_Slice"
 				(path "/66043bca-a260-4915-9fce-8a51d324c687"
 					(reference "#PWR062")
-					(unit 1)
-				)
-			)
-		)
-	)
-	(symbol
-		(lib_id "power:GNDA")
-		(at 156.21 38.1 0)
-		(unit 1)
-		(body_style 1)
-		(exclude_from_sim no)
-		(in_bom yes)
-		(on_board yes)
-		(in_pos_files yes)
-		(dnp no)
-		(uuid "af14ee2d-aa4b-41bf-8eb0-c268cecf0571")
-		(property "Reference" "#PWR079"
-			(at 156.21 44.45 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Value" "GNDA"
-			(at 156.21 41.91 0)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Footprint" ""
-			(at 156.21 38.1 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Datasheet" ""
-			(at 156.21 38.1 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Description" "Power symbol creates a global label with name \"GNDA\" , analog ground"
-			(at 156.21 38.1 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(pin "1"
-			(uuid "e3209e53-ce7b-41ba-a640-61919f9dc656")
-		)
-		(instances
-			(project "BREAD_Slice"
-				(path "/66043bca-a260-4915-9fce-8a51d324c687"
-					(reference "#PWR079")
 					(unit 1)
 				)
 			)
@@ -23666,83 +23127,6 @@
 			(project "BREAD_Slice"
 				(path "/66043bca-a260-4915-9fce-8a51d324c687"
 					(reference "R6")
-					(unit 1)
-				)
-			)
-		)
-	)
-	(symbol
-		(lib_id "power:GNDA")
-		(at 156.21 81.28 0)
-		(unit 1)
-		(body_style 1)
-		(exclude_from_sim no)
-		(in_bom yes)
-		(on_board yes)
-		(in_pos_files yes)
-		(dnp no)
-		(uuid "da88781a-2be1-4752-badf-2a72d01bc29f")
-		(property "Reference" "#PWR081"
-			(at 156.21 87.63 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Value" "GNDA"
-			(at 156.21 85.09 0)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Footprint" ""
-			(at 156.21 81.28 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Datasheet" ""
-			(at 156.21 81.28 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Description" "Power symbol creates a global label with name \"GNDA\" , analog ground"
-			(at 156.21 81.28 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(pin "1"
-			(uuid "4daef3ff-4775-4c78-aba3-0535a1a94959")
-		)
-		(instances
-			(project "BREAD_Slice"
-				(path "/66043bca-a260-4915-9fce-8a51d324c687"
-					(reference "#PWR081")
 					(unit 1)
 				)
 			)
@@ -26333,7 +25717,7 @@
 		)
 	)
 	(symbol
-		(lib_id "power:VAA")
+		(lib_id "power:+3.3VADC")
 		(at 180.34 27.94 0)
 		(unit 1)
 		(body_style 1)
@@ -26354,7 +25738,7 @@
 				)
 			)
 		)
-		(property "Value" "VAA"
+		(property "Value" "+3.3VADC"
 			(at 180.34 24.384 0)
 			(show_name no)
 			(do_not_autoplace no)
@@ -27883,5 +27267,85 @@
 		(path "/"
 			(page "1")
 		)
+	)
+	(label "VMID"
+		(at 156.21 38.1 180)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify right bottom)
+		)
+		(uuid "fa5c586c-48d9-4f57-9783-34fcd44a12cf")
+	)
+	(label "VMID"
+		(at 156.21 59.69 180)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify right bottom)
+		)
+		(uuid "304c0731-ee42-4c1b-929b-7d993a9a4be9")
+	)
+	(label "VMID"
+		(at 156.21 81.28 180)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify right bottom)
+		)
+		(uuid "3813d52e-da50-46f7-bed5-61adf758d982")
+	)
+	(label "VMID"
+		(at 156.21 102.87 180)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify right bottom)
+		)
+		(uuid "43f59aa1-acaa-455d-a475-6361cd4e94a5")
+	)
+	(label "VMID"
+		(at 156.21 124.46 180)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify right bottom)
+		)
+		(uuid "bd2741a2-0b6b-4158-91fd-5dc39f079e7f")
+	)
+	(label "VMID"
+		(at 156.21 146.05 180)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify right bottom)
+		)
+		(uuid "69a0b4c7-be1c-4a95-8aa9-a655cb00fb53")
+	)
+	(label "VMID"
+		(at 156.21 167.64 180)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify right bottom)
+		)
+		(uuid "a030e05c-a4d4-44c0-9149-e4962ede81a9")
+	)
+	(label "VMID"
+		(at 156.21 189.23 180)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify right bottom)
+		)
+		(uuid "5bbdba3a-44f2-473e-9539-89d4779d4f29")
 	)
 )

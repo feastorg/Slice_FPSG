@@ -12,8 +12,8 @@
 
 ## Pass 2 – Pre-fab Review
 
-- [ ] Fix 2x shorting items (I2C_CLK, I2C_DAT shorted to unnamed net)
+- [ ] Fix 2x shorting items (I2C_CLK, I2C_DAT shorted to unnamed net): those tracks are ripped up on feat/fpsg-r2, to be re-routed
 - [ ] Fix 2x solder mask bridge (front mask aperture bridges different nets)
 - [ ] Verify BOM completeness
 - [ ] Confirm board outline and mounting holes
-- [ ] Update README.md (still says "Slice Template")
+- [x] Update README.md (still says "Slice Template")

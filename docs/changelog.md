@@ -16,6 +16,10 @@ description: "Hardware and firmware revision history."
 - All eight M12 connectors share one pinout.
 - E-stop series resistor R31 and LED decoupling C40, from slice template r4.
 - Excitation sense on PA3.
+- All four mounting holes at the slice-standard corners; the edge M12
+  connectors slide inward and the hinge-type microSD socket moves inside
+  the board.
+- The I2C short across the Nucleo's NRST pad is gone.
 
 ### v0.1.0 (initial)
 - Initial schematic and PCB layout (4-layer)

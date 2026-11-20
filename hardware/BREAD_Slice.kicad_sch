@@ -6400,10 +6400,6 @@
 		(uuid "3dc2a740-288f-4488-9bbf-08f08f5eb214")
 	)
 	(no_connect
-		(at 55.88 175.26)
-		(uuid "3fb4838e-926f-4f0d-be67-5ece2cfe57fc")
-	)
-	(no_connect
 		(at 260.35 57.15)
 		(uuid "49637a48-fbf1-4a05-85a7-f1dc9a71e78e")
 	)
@@ -6446,10 +6442,6 @@
 	(no_connect
 		(at 25.4 182.88)
 		(uuid "e89fb78a-906d-47c9-bc9a-41216121b1ad")
-	)
-	(no_connect
-		(at 55.88 182.88)
-		(uuid "eeb4ae4f-42bb-4c9d-9a15-366606d0ac9b")
 	)
 	(no_connect
 		(at 24.13 123.19)
@@ -8226,17 +8218,6 @@
 	)
 	(wire
 		(pts
-			(xy 64.77 138.43) (xy 55.88 138.43)
-		)
-		(stroke
-			(width 0.2032)
-			(type default)
-			(color 0 132 132 1)
-		)
-		(uuid "8610f89f-03ae-450b-aae1-10120cb2805d")
-	)
-	(wire
-		(pts
 			(xy 243.84 138.43) (xy 238.76 138.43)
 		)
 		(stroke
@@ -8485,17 +8466,6 @@
 			(color 204 102 0 1)
 		)
 		(uuid "93927ce9-f780-4425-973f-312f7ce22b0d")
-	)
-	(wire
-		(pts
-			(xy 64.77 140.97) (xy 55.88 140.97)
-		)
-		(stroke
-			(width 0.2032)
-			(type default)
-			(color 0 132 132 1)
-		)
-		(uuid "946b3d19-6461-419d-9d15-292dd15eeb43")
 	)
 	(wire
 		(pts
@@ -10401,16 +10371,6 @@
 		)
 		(uuid "28c04383-4eae-4303-8257-caf538ccdb66")
 	)
-	(label "LED"
-		(at 64.77 138.43 180)
-		(effects
-			(font
-				(size 1.27 1.27)
-			)
-			(justify right bottom)
-		)
-		(uuid "28e5f305-d05e-4a08-9834-47e1c57edb51")
-	)
 	(label "IN5-"
 		(at 173.99 143.51 180)
 		(effects
@@ -10730,16 +10690,6 @@
 			(justify left bottom)
 		)
 		(uuid "5a8ae48c-f472-4f55-90e7-0bb18a8a8b6d")
-	)
-	(label "SYNC"
-		(at 64.77 140.97 180)
-		(effects
-			(font
-				(size 1.27 1.27)
-			)
-			(justify right bottom)
-		)
-		(uuid "5d7251f6-9643-4e1f-b1b1-fa15cd16c790")
 	)
 	(label "OUT3"
 		(at 154.94 92.71 0)
@@ -27347,5 +27297,53 @@
 			(justify right bottom)
 		)
 		(uuid "5bbdba3a-44f2-473e-9539-89d4779d4f29")
+	)
+	(no_connect
+		(at 55.88 138.43)
+		(uuid "7efd6ca0-ec47-4822-8cc3-5b95ca8d760f")
+	)
+	(no_connect
+		(at 55.88 140.97)
+		(uuid "429ceebd-7ea1-4956-8d17-e82e32785d37")
+	)
+	(wire
+		(pts
+			(xy 55.88 182.88) (xy 64.77 182.88)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "1ea7e14a-3a6a-4882-accb-fea943effe45")
+	)
+	(label "LED"
+		(at 64.77 182.88 180)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify right bottom)
+		)
+		(uuid "8ea067e5-225a-4218-8aaf-0b88cea21dba")
+	)
+	(wire
+		(pts
+			(xy 55.88 175.26) (xy 64.77 175.26)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "cd4496b8-1a68-4b41-8aa7-0277c7ab2f41")
+	)
+	(label "SYNC"
+		(at 64.77 175.26 180)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify right bottom)
+		)
+		(uuid "80d2b6ab-fb79-4304-8f39-a71635d735f7")
 	)
 )

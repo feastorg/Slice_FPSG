@@ -6,12 +6,12 @@ name: "Full-Bridge Programmable Strain Gauge Amplifier"
 status: "prototype"
 category: "sensing"
 
-summary: "6-channel full-bridge strain gauge amplifier with AD8426 instrumentation amp and SD logging."
+summary: "8-channel full-bridge strain gauge slice: LT3045 excitation, AD8426 amplifiers, ADS131M08 24-bit ADC, microSD logging."
 description: null
 
 # ── Versioning ────────────────────────────────────────────────────────────────
 version:
-  hardware: "0.1.0"
+  hardware: "0.2.0"
   firmware: null
   manifest: "0.1.0"
 
@@ -25,10 +25,10 @@ compatibility:
 hardware:
   mcu:
     type: "dev-board-socket"
-    form_factor: "nano"
-    primary: "ATmega328P"
+    form_factor: "nucleo32"
+    primary: "STM32L432KC"
     supported:
-      - "ATmega328P"
+      - "STM32L432KC"
   primary_ic:
     manufacturer: "Analog Devices"
     part_number: "AD8426"
@@ -43,9 +43,9 @@ hardware:
     - ref: "J1"
       type: "slice-bus-10pin"
       purpose: "power-and-i2c"
-    - ref: "J_M12"
-      type: "M12-4pin"
-      purpose: "load cell full-bridge connection"
+    - ref: "J2-J9"
+      type: "M12-5pin"
+      purpose: "full-bridge connection: 1 EXC+, 2 SIG+, 3 EXC-, 4 SIG-, 5 GNDA"
   mounting:
     pattern: "slice-standard-v0"
     hole_size: "M3"
@@ -84,12 +84,16 @@ interfaces:
         type: "full-bridge-strain-gauge"
       - name: "SG6"
         type: "full-bridge-strain-gauge"
+      - name: "SG7"
+        type: "full-bridge-strain-gauge"
+      - name: "SG8"
+        type: "full-bridge-strain-gauge"
     outputs: []
 
 # ── Capabilities ──────────────────────────────────────────────────────────────
 capabilities:
   - id: "strain_gauge_measurement"
-    channels: 6
+    channels: 8
     control_modes: []
 
 # ── Firmware ──────────────────────────────────────────────────────────────────

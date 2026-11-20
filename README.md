@@ -1,14 +1,24 @@
-# Slice Template
+# Slice FPSG
 
-Template for creating BREAD slices.
+Full-bridge strain-gauge slice for BREAD.
 
 ## Introduction
 
-[Short introduction on the project.]
+FPSG reads eight full-bridge strain gauges, such as the six channels of a
+1914A femur load cell. Each bridge is excited from a low-noise 10 V or 5 V
+supply, amplified by an AD8426, and converted with an ADS131M08 24-bit,
+8-channel simultaneous-sampling ADC. A NUCLEO-L432KC reads the ADC, logs to
+microSD and talks to the backplane over I²C.
 
 ## Usage
 
-[Explain how to use the project. Include examples and screenshots if applicable.]
+- Fit Rg1–Rg8 for the bridges' sensitivity; [the architecture
+  page](docs/architecture.md) has a table.
+- JP6 sets the excitation: 1–2 bridged (default) is 10 V; cut it and bridge
+  2–3 for 5 V.
+- Bridges connect to J2–J9 (M12): 1 EXC+, 2 SIG+, 3 EXC−, 4 SIG−.
+- Leave solder bridges SB16 and SB18 on the Nucleo on (the default): bus
+  I²C reaches the STM32 through them.
 
 ## Documentation
 

@@ -3,7 +3,7 @@
 	(generator "eeschema")
 	(generator_version "10.0")
 	(uuid "66043bca-a260-4915-9fce-8a51d324c687")
-	(paper "A4")
+	(paper "A3")
 	(lib_symbols
 		(symbol "+12V_1"
 			(power global)
@@ -6400,10 +6400,6 @@
 		(uuid "3dc2a740-288f-4488-9bbf-08f08f5eb214")
 	)
 	(no_connect
-		(at 55.88 175.26)
-		(uuid "3fb4838e-926f-4f0d-be67-5ece2cfe57fc")
-	)
-	(no_connect
 		(at 260.35 57.15)
 		(uuid "49637a48-fbf1-4a05-85a7-f1dc9a71e78e")
 	)
@@ -6442,14 +6438,6 @@
 	(no_connect
 		(at 245.11 34.29)
 		(uuid "de13bad9-9d5b-4c80-8f1c-17dba0849bdd")
-	)
-	(no_connect
-		(at 25.4 182.88)
-		(uuid "e89fb78a-906d-47c9-bc9a-41216121b1ad")
-	)
-	(no_connect
-		(at 55.88 182.88)
-		(uuid "eeb4ae4f-42bb-4c9d-9a15-366606d0ac9b")
 	)
 	(no_connect
 		(at 24.13 123.19)
@@ -8226,17 +8214,6 @@
 	)
 	(wire
 		(pts
-			(xy 64.77 138.43) (xy 55.88 138.43)
-		)
-		(stroke
-			(width 0.2032)
-			(type default)
-			(color 0 132 132 1)
-		)
-		(uuid "8610f89f-03ae-450b-aae1-10120cb2805d")
-	)
-	(wire
-		(pts
 			(xy 243.84 138.43) (xy 238.76 138.43)
 		)
 		(stroke
@@ -8485,17 +8462,6 @@
 			(color 204 102 0 1)
 		)
 		(uuid "93927ce9-f780-4425-973f-312f7ce22b0d")
-	)
-	(wire
-		(pts
-			(xy 64.77 140.97) (xy 55.88 140.97)
-		)
-		(stroke
-			(width 0.2032)
-			(type default)
-			(color 0 132 132 1)
-		)
-		(uuid "946b3d19-6461-419d-9d15-292dd15eeb43")
 	)
 	(wire
 		(pts
@@ -10221,7 +10187,7 @@
 		)
 		(uuid "053ddaf2-44df-4e96-94d2-3521090747f9")
 	)
-	(label "LC7_SIG-"
+	(label "LC7_SIG+"
 		(at 117.602 182.372 90)
 		(effects
 			(font
@@ -10400,16 +10366,6 @@
 			(justify right bottom)
 		)
 		(uuid "28c04383-4eae-4303-8257-caf538ccdb66")
-	)
-	(label "LED"
-		(at 64.77 138.43 180)
-		(effects
-			(font
-				(size 1.27 1.27)
-			)
-			(justify right bottom)
-		)
-		(uuid "28e5f305-d05e-4a08-9834-47e1c57edb51")
 	)
 	(label "IN5-"
 		(at 173.99 143.51 180)
@@ -10641,7 +10597,7 @@
 		)
 		(uuid "49ee6845-fd55-472c-920f-43175a96d9d7")
 	)
-	(label "LC3_SIG-"
+	(label "LC3_SIG+"
 		(at 117.602 96.012 90)
 		(effects
 			(font
@@ -10671,16 +10627,6 @@
 		)
 		(uuid "4de6d0f0-b167-4c60-ae24-c5e7716810d4")
 	)
-	(label "LC6_SIG+"
-		(at 99.822 160.782 90)
-		(effects
-			(font
-				(size 1.27 1.27)
-			)
-			(justify left bottom)
-		)
-		(uuid "4e617965-dad7-4314-b807-04aaedb0d9af")
-	)
 	(label "LC4_SIG+"
 		(at 83.82 120.65 0)
 		(effects
@@ -10690,16 +10636,6 @@
 			(justify left bottom)
 		)
 		(uuid "5314d8cc-b8c1-468c-a0b0-e20040484b02")
-	)
-	(label "LC3_SIG+"
-		(at 99.822 96.012 90)
-		(effects
-			(font
-				(size 1.27 1.27)
-			)
-			(justify left bottom)
-		)
-		(uuid "5497432a-4ba9-497b-adc8-1cfc94c6ef0e")
 	)
 	(label "IN0-"
 		(at 215.9 29.21 0)
@@ -10731,16 +10667,6 @@
 		)
 		(uuid "5a8ae48c-f472-4f55-90e7-0bb18a8a8b6d")
 	)
-	(label "SYNC"
-		(at 64.77 140.97 180)
-		(effects
-			(font
-				(size 1.27 1.27)
-			)
-			(justify right bottom)
-		)
-		(uuid "5d7251f6-9643-4e1f-b1b1-fa15cd16c790")
-	)
 	(label "OUT3"
 		(at 154.94 92.71 0)
 		(effects
@@ -10751,7 +10677,7 @@
 		)
 		(uuid "600f59bf-f40c-407e-a61f-5cda30e355b3")
 	)
-	(label "LC4_SIG-"
+	(label "LC4_SIG+"
 		(at 117.602 117.602 90)
 		(effects
 			(font
@@ -10801,7 +10727,7 @@
 		)
 		(uuid "64a5a801-66c4-469b-9e96-0c37fdce9356")
 	)
-	(label "LC1_SIG-"
+	(label "LC1_SIG+"
 		(at 117.602 52.832 90)
 		(effects
 			(font
@@ -10860,26 +10786,6 @@
 			(justify right bottom)
 		)
 		(uuid "7901496c-ac55-4e10-bd97-8a6c84358f10")
-	)
-	(label "LC4_SIG+"
-		(at 99.822 117.602 90)
-		(effects
-			(font
-				(size 1.27 1.27)
-			)
-			(justify left bottom)
-		)
-		(uuid "7aa3ae10-afe6-4eb9-a315-d7a8cb8f4813")
-	)
-	(label "LC0_SIG+"
-		(at 99.822 31.242 90)
-		(effects
-			(font
-				(size 1.27 1.27)
-			)
-			(justify left bottom)
-		)
-		(uuid "7c97dc56-c9d0-4ff5-8916-963f3a3282a7")
 	)
 	(label "OUT1"
 		(at 154.94 49.53 0)
@@ -11021,7 +10927,7 @@
 		)
 		(uuid "94874d38-6dd3-4fc8-a964-c5f9cdddbd4c")
 	)
-	(label "LC5_SIG-"
+	(label "LC5_SIG+"
 		(at 117.602 139.192 90)
 		(effects
 			(font
@@ -11031,7 +10937,7 @@
 		)
 		(uuid "97a5e4d3-8fca-48ed-aa8d-395c7125cf16")
 	)
-	(label "ESTOP"
+	(label "ESTOP_MCU"
 		(at 15.24 138.43 0)
 		(effects
 			(font
@@ -11041,7 +10947,7 @@
 		)
 		(uuid "984a0037-d246-44fa-99a6-892e1ecc5169")
 	)
-	(label "LC6_SIG-"
+	(label "LC6_SIG+"
 		(at 117.602 160.782 90)
 		(effects
 			(font
@@ -11190,16 +11096,6 @@
 			(justify left bottom)
 		)
 		(uuid "b7de3452-62c6-4955-8aa8-bb741ba6011b")
-	)
-	(label "LC1_SIG+"
-		(at 99.822 52.832 90)
-		(effects
-			(font
-				(size 1.27 1.27)
-			)
-			(justify left bottom)
-		)
-		(uuid "ba9718da-f563-4669-b774-cbaa3e89df60")
 	)
 	(label "IN0+"
 		(at 173.99 27.94 180)
@@ -11381,16 +11277,6 @@
 		)
 		(uuid "dc373f67-f51a-4b5c-9f70-e0b84d3524fe")
 	)
-	(label "LC5_SIG+"
-		(at 99.822 139.192 90)
-		(effects
-			(font
-				(size 1.27 1.27)
-			)
-			(justify left bottom)
-		)
-		(uuid "dc4ad881-a43a-4023-84c0-f3de78492b04")
-	)
 	(label "VMID"
 		(at 204.47 26.67 180)
 		(effects
@@ -11451,7 +11337,7 @@
 		)
 		(uuid "e72af0b5-7304-4206-8d81-2b5b7fbe5a56")
 	)
-	(label "LC0_SIG-"
+	(label "LC0_SIG+"
 		(at 117.602 31.242 90)
 		(effects
 			(font
@@ -11481,17 +11367,7 @@
 		)
 		(uuid "eeed1818-4b94-42a3-9387-4d391f1c5d3a")
 	)
-	(label "LC7_SIG+"
-		(at 99.822 182.372 90)
-		(effects
-			(font
-				(size 1.27 1.27)
-			)
-			(justify left bottom)
-		)
-		(uuid "f11e4843-33fc-48da-8936-41a51a8d4307")
-	)
-	(label "LC2_SIG-"
+	(label "LC2_SIG+"
 		(at 117.602 74.422 90)
 		(effects
 			(font
@@ -11500,16 +11376,6 @@
 			(justify left bottom)
 		)
 		(uuid "f4a8c4af-56a2-4b98-802f-b1212e1428f2")
-	)
-	(label "LC2_SIG+"
-		(at 99.822 74.422 90)
-		(effects
-			(font
-				(size 1.27 1.27)
-			)
-			(justify left bottom)
-		)
-		(uuid "f5a72e29-f9cc-444e-8e5b-6e86dc088629")
 	)
 	(label "LC5_SIG+"
 		(at 83.82 142.24 0)
@@ -12050,7 +11916,7 @@
 	)
 	(symbol
 		(lib_id "power:VAA")
-		(at 101.854 163.83 90)
+		(at 99.822 160.782 0)
 		(unit 1)
 		(body_style 1)
 		(exclude_from_sim no)
@@ -12060,7 +11926,7 @@
 		(dnp no)
 		(uuid "01bb11ec-f422-4609-9711-e6d1959f9b47")
 		(property "Reference" "#PWR045"
-			(at 105.664 163.83 0)
+			(at 99.822 154.432 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -12071,7 +11937,7 @@
 			)
 		)
 		(property "Value" "VAA"
-			(at 101.346 165.862 90)
+			(at 99.822 157.226 0)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
@@ -12835,83 +12701,6 @@
 	)
 	(symbol
 		(lib_id "power:GNDA")
-		(at 156.21 189.23 0)
-		(unit 1)
-		(body_style 1)
-		(exclude_from_sim no)
-		(in_bom yes)
-		(on_board yes)
-		(in_pos_files yes)
-		(dnp no)
-		(uuid "165590bf-0cc0-4043-a13f-08d1c826c3fd")
-		(property "Reference" "#PWR086"
-			(at 156.21 195.58 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Value" "GNDA"
-			(at 156.21 193.04 0)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Footprint" ""
-			(at 156.21 189.23 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Datasheet" ""
-			(at 156.21 189.23 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Description" "Power symbol creates a global label with name \"GNDA\" , analog ground"
-			(at 156.21 189.23 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(pin "1"
-			(uuid "332d1b5d-bc04-4632-94b3-caf02407ef2e")
-		)
-		(instances
-			(project "BREAD_Slice"
-				(path "/66043bca-a260-4915-9fce-8a51d324c687"
-					(reference "#PWR086")
-					(unit 1)
-				)
-			)
-		)
-	)
-	(symbol
-		(lib_id "power:GNDA")
 		(at 86.36 191.77 0)
 		(unit 1)
 		(body_style 1)
@@ -13457,7 +13246,7 @@
 	)
 	(symbol
 		(lib_id "power:VAA")
-		(at 101.854 55.88 90)
+		(at 99.822 52.832 0)
 		(unit 1)
 		(body_style 1)
 		(exclude_from_sim no)
@@ -13467,7 +13256,7 @@
 		(dnp no)
 		(uuid "1eaa66e2-973d-4b37-b75e-0700d4e5dc5f")
 		(property "Reference" "#PWR040"
-			(at 105.664 55.88 0)
+			(at 99.822 46.482 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -13478,7 +13267,7 @@
 			)
 		)
 		(property "Value" "VAA"
-			(at 101.6 58.166 90)
+			(at 99.822 49.276 0)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
@@ -15451,83 +15240,6 @@
 		)
 	)
 	(symbol
-		(lib_id "power:GNDA")
-		(at 156.21 124.46 0)
-		(unit 1)
-		(body_style 1)
-		(exclude_from_sim no)
-		(in_bom yes)
-		(on_board yes)
-		(in_pos_files yes)
-		(dnp no)
-		(uuid "3cdbcdd0-8736-4293-85ce-3bb8b06a81a8")
-		(property "Reference" "#PWR083"
-			(at 156.21 130.81 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Value" "GNDA"
-			(at 156.21 128.27 0)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Footprint" ""
-			(at 156.21 124.46 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Datasheet" ""
-			(at 156.21 124.46 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Description" "Power symbol creates a global label with name \"GNDA\" , analog ground"
-			(at 156.21 124.46 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(pin "1"
-			(uuid "436ed884-7746-43c7-a327-be02d4419897")
-		)
-		(instances
-			(project "BREAD_Slice"
-				(path "/66043bca-a260-4915-9fce-8a51d324c687"
-					(reference "#PWR083")
-					(unit 1)
-				)
-			)
-		)
-	)
-	(symbol
 		(lib_id "power:GNDD")
 		(at 207.01 110.49 0)
 		(unit 1)
@@ -17283,7 +16995,7 @@
 	)
 	(symbol
 		(lib_id "power:VAA")
-		(at 101.854 99.06 90)
+		(at 99.822 96.012 0)
 		(unit 1)
 		(body_style 1)
 		(exclude_from_sim no)
@@ -17293,7 +17005,7 @@
 		(dnp no)
 		(uuid "6df13467-491a-40c4-a2f8-88b49e386d5f")
 		(property "Reference" "#PWR042"
-			(at 105.664 99.06 0)
+			(at 99.822 89.662 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -17304,7 +17016,7 @@
 			)
 		)
 		(property "Value" "VAA"
-			(at 101.6 101.346 90)
+			(at 99.822 92.456 0)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
@@ -18240,85 +17952,9 @@
 		)
 	)
 	(symbol
-		(lib_id "power:GNDA")
-		(at 156.21 59.69 0)
-		(unit 1)
-		(body_style 1)
-		(exclude_from_sim no)
-		(in_bom yes)
-		(on_board yes)
-		(in_pos_files yes)
-		(dnp no)
-		(uuid "7b589eec-8c78-4fc5-9e5d-614d5577338c")
-		(property "Reference" "#PWR080"
-			(at 156.21 66.04 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Value" "GNDA"
-			(at 156.21 63.5 0)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Footprint" ""
-			(at 156.21 59.69 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Datasheet" ""
-			(at 156.21 59.69 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Description" "Power symbol creates a global label with name \"GNDA\" , analog ground"
-			(at 156.21 59.69 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(pin "1"
-			(uuid "e0d1a2f2-2979-4c53-9db0-3df45e5df057")
-		)
-		(instances
-			(project "BREAD_Slice"
-				(path "/66043bca-a260-4915-9fce-8a51d324c687"
-					(reference "#PWR080")
-					(unit 1)
-				)
-			)
-		)
-	)
-	(symbol
 		(lib_id "KMLib_Connectors:1439890_M12_5P")
-		(at 99.822 55.372 0)
+		(at 117.602 55.372 0)
+		(mirror y)
 		(unit 1)
 		(body_style 1)
 		(exclude_from_sim no)
@@ -18713,7 +18349,7 @@
 	)
 	(symbol
 		(lib_id "power:VAA")
-		(at 101.854 185.42 90)
+		(at 99.822 182.372 0)
 		(unit 1)
 		(body_style 1)
 		(exclude_from_sim no)
@@ -18723,7 +18359,7 @@
 		(dnp no)
 		(uuid "823170fe-e49a-4fde-8a4f-c62b01d07908")
 		(property "Reference" "#PWR046"
-			(at 105.664 185.42 0)
+			(at 99.822 176.022 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -18734,7 +18370,7 @@
 			)
 		)
 		(property "Value" "VAA"
-			(at 101.6 187.706 90)
+			(at 99.822 178.816 0)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
@@ -19748,83 +19384,6 @@
 	)
 	(symbol
 		(lib_id "power:GNDA")
-		(at 156.21 167.64 0)
-		(unit 1)
-		(body_style 1)
-		(exclude_from_sim no)
-		(in_bom yes)
-		(on_board yes)
-		(in_pos_files yes)
-		(dnp no)
-		(uuid "9de674d0-b776-4686-9598-a40ea784a34a")
-		(property "Reference" "#PWR085"
-			(at 156.21 173.99 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Value" "GNDA"
-			(at 156.21 171.45 0)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Footprint" ""
-			(at 156.21 167.64 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Datasheet" ""
-			(at 156.21 167.64 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Description" "Power symbol creates a global label with name \"GNDA\" , analog ground"
-			(at 156.21 167.64 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(pin "1"
-			(uuid "4d8a5f1b-337d-4cb1-aeaf-99e2e8a85d9d")
-		)
-		(instances
-			(project "BREAD_Slice"
-				(path "/66043bca-a260-4915-9fce-8a51d324c687"
-					(reference "#PWR085")
-					(unit 1)
-				)
-			)
-		)
-	)
-	(symbol
-		(lib_id "power:GNDA")
 		(at 115.57 34.29 0)
 		(mirror y)
 		(unit 1)
@@ -20057,85 +19616,8 @@
 		)
 	)
 	(symbol
-		(lib_id "power:GNDA")
-		(at 156.21 146.05 0)
-		(unit 1)
-		(body_style 1)
-		(exclude_from_sim no)
-		(in_bom yes)
-		(on_board yes)
-		(in_pos_files yes)
-		(dnp no)
-		(uuid "a1d7a115-ce5e-4d64-8c63-e5269fbcd760")
-		(property "Reference" "#PWR084"
-			(at 156.21 152.4 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Value" "GNDA"
-			(at 156.21 149.86 0)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Footprint" ""
-			(at 156.21 146.05 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Datasheet" ""
-			(at 156.21 146.05 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Description" "Power symbol creates a global label with name \"GNDA\" , analog ground"
-			(at 156.21 146.05 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(pin "1"
-			(uuid "9354569c-0e3d-4afc-abef-63f797cda5b4")
-		)
-		(instances
-			(project "BREAD_Slice"
-				(path "/66043bca-a260-4915-9fce-8a51d324c687"
-					(reference "#PWR084")
-					(unit 1)
-				)
-			)
-		)
-	)
-	(symbol
 		(lib_id "power:VAA")
-		(at 101.854 77.47 90)
+		(at 99.822 74.422 0)
 		(unit 1)
 		(body_style 1)
 		(exclude_from_sim no)
@@ -20145,7 +19627,7 @@
 		(dnp no)
 		(uuid "a2039faa-ca9e-49e7-b8eb-e58fdce6c60e")
 		(property "Reference" "#PWR041"
-			(at 105.664 77.47 0)
+			(at 99.822 68.072 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -20156,7 +19638,7 @@
 			)
 		)
 		(property "Value" "VAA"
-			(at 101.346 79.502 90)
+			(at 99.822 70.866 0)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
@@ -20521,83 +20003,6 @@
 	)
 	(symbol
 		(lib_id "power:GNDA")
-		(at 156.21 102.87 0)
-		(unit 1)
-		(body_style 1)
-		(exclude_from_sim no)
-		(in_bom yes)
-		(on_board yes)
-		(in_pos_files yes)
-		(dnp no)
-		(uuid "a8ec91d7-22e6-4e4e-ad99-a77e1a3eb7e1")
-		(property "Reference" "#PWR082"
-			(at 156.21 109.22 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Value" "GNDA"
-			(at 156.21 106.68 0)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Footprint" ""
-			(at 156.21 102.87 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Datasheet" ""
-			(at 156.21 102.87 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Description" "Power symbol creates a global label with name \"GNDA\" , analog ground"
-			(at 156.21 102.87 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(pin "1"
-			(uuid "d3722350-0ee8-48a5-a944-33ee7d45890c")
-		)
-		(instances
-			(project "BREAD_Slice"
-				(path "/66043bca-a260-4915-9fce-8a51d324c687"
-					(reference "#PWR082")
-					(unit 1)
-				)
-			)
-		)
-	)
-	(symbol
-		(lib_id "power:GNDD")
 		(at 269.24 149.86 0)
 		(unit 1)
 		(body_style 1)
@@ -20619,7 +20024,7 @@
 				)
 			)
 		)
-		(property "Value" "GNDD"
+		(property "Value" "GNDA"
 			(at 269.24 153.67 0)
 			(show_name no)
 			(do_not_autoplace no)
@@ -20842,7 +20247,8 @@
 	)
 	(symbol
 		(lib_id "KMLib_Connectors:1439890_M12_5P")
-		(at 99.822 141.732 0)
+		(at 117.602 141.732 0)
+		(mirror y)
 		(unit 1)
 		(body_style 1)
 		(exclude_from_sim no)
@@ -21229,83 +20635,6 @@
 		)
 	)
 	(symbol
-		(lib_id "power:GNDA")
-		(at 156.21 38.1 0)
-		(unit 1)
-		(body_style 1)
-		(exclude_from_sim no)
-		(in_bom yes)
-		(on_board yes)
-		(in_pos_files yes)
-		(dnp no)
-		(uuid "af14ee2d-aa4b-41bf-8eb0-c268cecf0571")
-		(property "Reference" "#PWR079"
-			(at 156.21 44.45 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Value" "GNDA"
-			(at 156.21 41.91 0)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Footprint" ""
-			(at 156.21 38.1 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Datasheet" ""
-			(at 156.21 38.1 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Description" "Power symbol creates a global label with name \"GNDA\" , analog ground"
-			(at 156.21 38.1 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(pin "1"
-			(uuid "e3209e53-ce7b-41ba-a640-61919f9dc656")
-		)
-		(instances
-			(project "BREAD_Slice"
-				(path "/66043bca-a260-4915-9fce-8a51d324c687"
-					(reference "#PWR079")
-					(unit 1)
-				)
-			)
-		)
-	)
-	(symbol
 		(lib_id "power:GNDD")
 		(at 63.5 151.13 0)
 		(unit 1)
@@ -21461,7 +20790,7 @@
 	)
 	(symbol
 		(lib_id "power:VAA")
-		(at 101.854 34.29 90)
+		(at 99.822 31.242 0)
 		(unit 1)
 		(body_style 1)
 		(exclude_from_sim no)
@@ -21471,7 +20800,7 @@
 		(dnp no)
 		(uuid "b55dec47-9e1e-4342-a2fa-0543480dffdf")
 		(property "Reference" "#PWR039"
-			(at 105.664 34.29 0)
+			(at 99.822 24.892 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -21482,7 +20811,7 @@
 			)
 		)
 		(property "Value" "VAA"
-			(at 101.346 36.322 90)
+			(at 99.822 27.686 0)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
@@ -23673,83 +23002,6 @@
 	)
 	(symbol
 		(lib_id "power:GNDA")
-		(at 156.21 81.28 0)
-		(unit 1)
-		(body_style 1)
-		(exclude_from_sim no)
-		(in_bom yes)
-		(on_board yes)
-		(in_pos_files yes)
-		(dnp no)
-		(uuid "da88781a-2be1-4752-badf-2a72d01bc29f")
-		(property "Reference" "#PWR081"
-			(at 156.21 87.63 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Value" "GNDA"
-			(at 156.21 85.09 0)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Footprint" ""
-			(at 156.21 81.28 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Datasheet" ""
-			(at 156.21 81.28 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Description" "Power symbol creates a global label with name \"GNDA\" , analog ground"
-			(at 156.21 81.28 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(pin "1"
-			(uuid "4daef3ff-4775-4c78-aba3-0535a1a94959")
-		)
-		(instances
-			(project "BREAD_Slice"
-				(path "/66043bca-a260-4915-9fce-8a51d324c687"
-					(reference "#PWR081")
-					(unit 1)
-				)
-			)
-		)
-	)
-	(symbol
-		(lib_id "power:GNDA")
 		(at 86.36 29.21 0)
 		(mirror y)
 		(unit 1)
@@ -23906,7 +23158,8 @@
 	)
 	(symbol
 		(lib_id "KMLib_Connectors:1439890_M12_5P")
-		(at 99.822 184.912 0)
+		(at 117.602 184.912 0)
+		(mirror y)
 		(unit 1)
 		(body_style 1)
 		(exclude_from_sim no)
@@ -24217,7 +23470,7 @@
 	)
 	(symbol
 		(lib_id "power:VAA")
-		(at 101.854 142.24 90)
+		(at 99.822 139.192 0)
 		(unit 1)
 		(body_style 1)
 		(exclude_from_sim no)
@@ -24227,7 +23480,7 @@
 		(dnp no)
 		(uuid "e1c7b94e-d5f2-4c14-8028-6e1265b9b2a6")
 		(property "Reference" "#PWR044"
-			(at 105.664 142.24 0)
+			(at 99.822 132.842 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -24238,7 +23491,7 @@
 			)
 		)
 		(property "Value" "VAA"
-			(at 101.6 144.526 90)
+			(at 99.822 135.636 0)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
@@ -24680,7 +23933,7 @@
 	)
 	(symbol
 		(lib_id "power:VAA")
-		(at 101.854 120.65 90)
+		(at 99.822 117.602 0)
 		(unit 1)
 		(body_style 1)
 		(exclude_from_sim no)
@@ -24690,7 +23943,7 @@
 		(dnp no)
 		(uuid "e3026a5d-5a7e-4b9a-ad2b-938ce200e483")
 		(property "Reference" "#PWR043"
-			(at 105.664 120.65 0)
+			(at 99.822 111.252 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -24701,7 +23954,7 @@
 			)
 		)
 		(property "Value" "VAA"
-			(at 101.346 122.682 90)
+			(at 99.822 114.046 0)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
@@ -26019,7 +25272,8 @@
 	)
 	(symbol
 		(lib_id "KMLib_Connectors:1439890_M12_5P")
-		(at 99.822 98.552 0)
+		(at 117.602 98.552 0)
+		(mirror y)
 		(unit 1)
 		(body_style 1)
 		(exclude_from_sim no)
@@ -26333,7 +25587,7 @@
 		)
 	)
 	(symbol
-		(lib_id "power:VAA")
+		(lib_id "power:+3.3VADC")
 		(at 180.34 27.94 0)
 		(unit 1)
 		(body_style 1)
@@ -26354,7 +25608,7 @@
 				)
 			)
 		)
-		(property "Value" "VAA"
+		(property "Value" "+3.3VADC"
 			(at 180.34 24.384 0)
 			(show_name no)
 			(do_not_autoplace no)
@@ -27539,7 +26793,7 @@
 			(color 0 0 0 0)
 		)
 		(uuid "e6a3e594-cd55-4428-a6c3-0bb2454de731")
-		(property "Sheetname" "TPS7A4901-VAA"
+		(property "Sheetname" "LT3045-VAA"
 			(at 189.23 81.8384 0)
 			(show_name no)
 			(do_not_autoplace no)
@@ -27550,7 +26804,7 @@
 				(justify left bottom)
 			)
 		)
-		(property "Sheetfile" "tps7a4901_adjustable.kicad_sch"
+		(property "Sheetfile" "lt3045_vaa.kicad_sch"
 			(at 177.038 101.346 0)
 			(show_name no)
 			(do_not_autoplace no)
@@ -27879,9 +27133,1273 @@
 			)
 		)
 	)
+	(symbol
+		(lib_id "Device:R")
+		(at 295.91 36.83 0)
+		(unit 1)
+		(body_style 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(in_pos_files yes)
+		(dnp no)
+		(uuid "4bac7e69-68a6-4612-866b-21bc3215bb42")
+		(property "Reference" "R31"
+			(at 298.45 35.56 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Value" "1k"
+			(at 298.45 38.1 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" "Resistor_SMD:R_0805_2012Metric_Pad1.20x1.40mm_HandSolder"
+			(at 297.688 36.83 90)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Datasheet" ""
+			(at 295.91 36.83 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Description" "Resistor"
+			(at 295.91 36.83 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(pin "2"
+			(uuid "b99c78fe-88f4-4ef0-bddc-f50f3334cc0f")
+		)
+		(pin "1"
+			(uuid "74a9aaa3-c064-4707-a01f-097484898089")
+		)
+		(instances
+			(project "BREAD_Slice"
+				(path "/66043bca-a260-4915-9fce-8a51d324c687"
+					(reference "R31")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(wire
+		(pts
+			(xy 295.91 33.02) (xy 295.91 30.48)
+		)
+		(stroke
+			(width 0.2032)
+			(type default)
+			(color 0 194 0 1)
+		)
+		(uuid "35cd3aa3-af18-456b-98c3-1d15c5eb397a")
+	)
+	(label "ESTOP"
+		(at 295.91 30.48 90)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify left bottom)
+		)
+		(uuid "070dae50-e123-4948-af91-3ffe66bd1f8d")
+	)
+	(wire
+		(pts
+			(xy 295.91 40.64) (xy 295.91 43.18)
+		)
+		(stroke
+			(width 0.2032)
+			(type default)
+			(color 0 194 0 1)
+		)
+		(uuid "3114b711-6e6a-4c5f-8c3d-ff5f356a4feb")
+	)
+	(label "ESTOP_MCU"
+		(at 295.91 43.18 270)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify right bottom)
+		)
+		(uuid "b462c4af-7982-4606-9929-b2d730c7b225")
+	)
+	(symbol
+		(lib_id "Device:C_Small")
+		(at 303.53 33.02 0)
+		(unit 1)
+		(body_style 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(in_pos_files yes)
+		(dnp no)
+		(uuid "7058882e-9f18-4f4d-acb2-f88a062ffcb5")
+		(property "Reference" "C40"
+			(at 306.07 31.75 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Value" "100n"
+			(at 306.07 34.29 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Footprint" "Capacitor_SMD:C_0603_1608Metric_Pad1.08x0.95mm_HandSolder"
+			(at 303.53 33.02 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Datasheet" ""
+			(at 303.53 33.02 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Description" ""
+			(at 303.53 33.02 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(pin "1"
+			(uuid "81381103-9e78-4dc5-b267-f3983755b4d9")
+		)
+		(pin "2"
+			(uuid "d6a9ad0f-b90f-4a0a-9149-73703bb12711")
+		)
+		(instances
+			(project "BREAD_Slice"
+				(path "/66043bca-a260-4915-9fce-8a51d324c687"
+					(reference "C40")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(wire
+		(pts
+			(xy 303.53 30.48) (xy 303.53 27.94)
+		)
+		(stroke
+			(width 0.2032)
+			(type default)
+			(color 0 194 0 1)
+		)
+		(uuid "86a1943d-f8ab-405d-a602-b6c6e0242db2")
+	)
+	(symbol
+		(lib_id "power:+5VD")
+		(at 303.53 27.94 0)
+		(unit 1)
+		(body_style 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(in_pos_files yes)
+		(dnp no)
+		(uuid "a4d99645-bf6f-4954-8472-be6a8f3039fa")
+		(property "Reference" "#PWR0108"
+			(at 303.53 31.75 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Value" "+5VD"
+			(at 303.53 24.384 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" ""
+			(at 303.53 27.94 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Datasheet" ""
+			(at 303.53 27.94 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Description" "Power symbol creates a global label with name \"+5VD\""
+			(at 303.53 27.94 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(pin "1"
+			(uuid "bfe4fc28-1542-4326-96a2-5e798f28b5df")
+		)
+		(instances
+			(project "BREAD_Slice"
+				(path "/66043bca-a260-4915-9fce-8a51d324c687"
+					(reference "#PWR0108")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(wire
+		(pts
+			(xy 303.53 35.56) (xy 303.53 38.1)
+		)
+		(stroke
+			(width 0.2032)
+			(type default)
+			(color 0 194 0 1)
+		)
+		(uuid "a483311c-ecdf-426d-bd45-26dc97cc7a4c")
+	)
+	(symbol
+		(lib_id "power:GNDD")
+		(at 303.53 38.1 0)
+		(unit 1)
+		(body_style 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(in_pos_files yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(uuid "07f0810b-abc0-4860-86c6-13fa6580600c")
+		(property "Reference" "#PWR0109"
+			(at 303.53 44.45 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Value" "GNDD"
+			(at 303.53 41.91 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" ""
+			(at 303.53 38.1 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Datasheet" ""
+			(at 303.53 38.1 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Description" "Power symbol creates a global label with name \"GNDD\" , digital ground"
+			(at 303.53 38.1 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(pin "1"
+			(uuid "306b802a-7510-4df0-8b44-fa021d2a8128")
+		)
+		(instances
+			(project "BREAD_Slice"
+				(path "/66043bca-a260-4915-9fce-8a51d324c687"
+					(reference "#PWR0109")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "Device:R")
+		(at 311.15 33.02 0)
+		(unit 1)
+		(body_style 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(in_pos_files yes)
+		(dnp no)
+		(uuid "b08742a5-6a35-4f64-82b3-68714c53ae1e")
+		(property "Reference" "R32"
+			(at 313.69 31.75 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Value" "30.1k 1%"
+			(at 313.69 34.29 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" "Resistor_SMD:R_0805_2012Metric_Pad1.20x1.40mm_HandSolder"
+			(at 312.928 33.02 90)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Datasheet" ""
+			(at 311.15 33.02 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Description" "Resistor"
+			(at 311.15 33.02 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(pin "2"
+			(uuid "c621b3b3-e4f1-4da5-b306-ab76fd6ff2fe")
+		)
+		(pin "1"
+			(uuid "9fbbcc58-4ab8-4423-b91a-1e9b7871be44")
+		)
+		(instances
+			(project "BREAD_Slice"
+				(path "/66043bca-a260-4915-9fce-8a51d324c687"
+					(reference "R32")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(wire
+		(pts
+			(xy 311.15 29.21) (xy 311.15 26.67)
+		)
+		(stroke
+			(width 0.2032)
+			(type default)
+			(color 0 194 0 1)
+		)
+		(uuid "60b716a0-a934-4425-9dcc-f325a15b76f0")
+	)
+	(symbol
+		(lib_id "power:VAA")
+		(at 311.15 26.67 0)
+		(unit 1)
+		(body_style 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(in_pos_files yes)
+		(dnp no)
+		(uuid "a148265a-8f83-4eed-a89c-ac3a2c744b14")
+		(property "Reference" "#PWR0110"
+			(at 311.15 30.48 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Value" "VAA"
+			(at 309.118 26.162 90)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" ""
+			(at 311.15 26.67 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Datasheet" ""
+			(at 311.15 26.67 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Description" "Power symbol creates a global label with name \"VAA\""
+			(at 311.15 26.67 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(pin "1"
+			(uuid "7d55619e-5d54-4d32-8478-678f021e0381")
+		)
+		(instances
+			(project "BREAD_Slice"
+				(path "/66043bca-a260-4915-9fce-8a51d324c687"
+					(reference "#PWR0110")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(wire
+		(pts
+			(xy 311.15 36.83) (xy 311.15 39.37)
+		)
+		(stroke
+			(width 0.2032)
+			(type default)
+			(color 0 194 0 1)
+		)
+		(uuid "65b58072-573e-464b-97aa-7c67b2c7635d")
+	)
+	(label "EXC_SENS"
+		(at 311.15 39.37 270)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify right bottom)
+		)
+		(uuid "c1673630-7a8f-4606-8781-00da272d8fa2")
+	)
+	(symbol
+		(lib_id "Device:R")
+		(at 318.77 39.37 0)
+		(unit 1)
+		(body_style 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(in_pos_files yes)
+		(dnp no)
+		(uuid "36a14458-f246-4a66-b045-9fdfff94743b")
+		(property "Reference" "R33"
+			(at 321.31 38.1 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Value" "10k 1%"
+			(at 321.31 40.64 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" "Resistor_SMD:R_0805_2012Metric_Pad1.20x1.40mm_HandSolder"
+			(at 320.548 39.37 90)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Datasheet" ""
+			(at 318.77 39.37 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Description" "Resistor"
+			(at 318.77 39.37 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(pin "2"
+			(uuid "c5f0a008-f03a-404d-9ee6-a1bf316c44fb")
+		)
+		(pin "1"
+			(uuid "84bca918-4586-4aa9-b8f3-87efee53c16b")
+		)
+		(instances
+			(project "BREAD_Slice"
+				(path "/66043bca-a260-4915-9fce-8a51d324c687"
+					(reference "R33")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(wire
+		(pts
+			(xy 318.77 35.56) (xy 318.77 33.02)
+		)
+		(stroke
+			(width 0.2032)
+			(type default)
+			(color 0 194 0 1)
+		)
+		(uuid "ba56012a-3797-4426-a12c-ab8c5bd764f0")
+	)
+	(label "EXC_SENS"
+		(at 318.77 33.02 90)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify left bottom)
+		)
+		(uuid "fc244a81-96be-4405-b3b6-aa25e747e9d6")
+	)
+	(wire
+		(pts
+			(xy 318.77 43.18) (xy 318.77 45.72)
+		)
+		(stroke
+			(width 0.2032)
+			(type default)
+			(color 0 194 0 1)
+		)
+		(uuid "e2a220b8-703d-4929-8ac6-ba050730ef6f")
+	)
+	(symbol
+		(lib_id "power:GNDA")
+		(at 318.77 45.72 0)
+		(unit 1)
+		(body_style 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(in_pos_files yes)
+		(dnp no)
+		(uuid "1034aab2-f690-410b-9ce5-359c32ff1f51")
+		(property "Reference" "#PWR0111"
+			(at 318.77 52.07 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Value" "GNDA"
+			(at 318.262 44.704 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" ""
+			(at 318.77 45.72 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Datasheet" ""
+			(at 318.77 45.72 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Description" "Power symbol creates a global label with name \"GNDA\" , analog ground"
+			(at 318.77 45.72 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(pin "1"
+			(uuid "dd6f1a20-8039-44bf-85b0-29f9bb47b1cb")
+		)
+		(instances
+			(project "BREAD_Slice"
+				(path "/66043bca-a260-4915-9fce-8a51d324c687"
+					(reference "#PWR0111")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "Device:C_Small")
+		(at 326.39 38.1 0)
+		(unit 1)
+		(body_style 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(in_pos_files yes)
+		(dnp no)
+		(uuid "4e3fecd2-1f11-46c5-ad12-a79446c26290")
+		(property "Reference" "C41"
+			(at 328.93 36.83 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Value" "100n"
+			(at 328.93 39.37 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Footprint" "Capacitor_SMD:C_0603_1608Metric_Pad1.08x0.95mm_HandSolder"
+			(at 326.39 38.1 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Datasheet" ""
+			(at 326.39 38.1 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Description" ""
+			(at 326.39 38.1 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(pin "1"
+			(uuid "e94d502d-f429-45ca-81d5-e70392c2fef7")
+		)
+		(pin "2"
+			(uuid "779d229c-3edf-4743-b271-f029e9cb31d0")
+		)
+		(instances
+			(project "BREAD_Slice"
+				(path "/66043bca-a260-4915-9fce-8a51d324c687"
+					(reference "C41")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(wire
+		(pts
+			(xy 326.39 35.56) (xy 326.39 33.02)
+		)
+		(stroke
+			(width 0.2032)
+			(type default)
+			(color 0 194 0 1)
+		)
+		(uuid "cb61aac8-25e9-472c-8694-249f06fd466f")
+	)
+	(label "EXC_SENS"
+		(at 326.39 33.02 90)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify left bottom)
+		)
+		(uuid "51a19a67-e7f5-458b-b50c-130514feb2ca")
+	)
+	(wire
+		(pts
+			(xy 326.39 40.64) (xy 326.39 43.18)
+		)
+		(stroke
+			(width 0.2032)
+			(type default)
+			(color 0 194 0 1)
+		)
+		(uuid "50efa1d3-a047-41db-bb99-cf9aba4412c6")
+	)
+	(symbol
+		(lib_id "power:GNDA")
+		(at 326.39 43.18 0)
+		(unit 1)
+		(body_style 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(in_pos_files yes)
+		(dnp no)
+		(uuid "f411fcf1-ac90-4ff5-ba92-08fcc180d35b")
+		(property "Reference" "#PWR0112"
+			(at 326.39 49.53 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Value" "GNDA"
+			(at 325.882 42.164 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" ""
+			(at 326.39 43.18 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Datasheet" ""
+			(at 326.39 43.18 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Description" "Power symbol creates a global label with name \"GNDA\" , analog ground"
+			(at 326.39 43.18 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(pin "1"
+			(uuid "3629a163-4c87-41b3-b6cd-22fb9cff9700")
+		)
+		(instances
+			(project "BREAD_Slice"
+				(path "/66043bca-a260-4915-9fce-8a51d324c687"
+					(reference "#PWR0112")
+					(unit 1)
+				)
+			)
+		)
+	)
 	(sheet_instances
 		(path "/"
 			(page "1")
 		)
+	)
+	(label "VMID"
+		(at 156.21 38.1 180)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify right bottom)
+		)
+		(uuid "fa5c586c-48d9-4f57-9783-34fcd44a12cf")
+	)
+	(label "VMID"
+		(at 156.21 59.69 180)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify right bottom)
+		)
+		(uuid "304c0731-ee42-4c1b-929b-7d993a9a4be9")
+	)
+	(label "VMID"
+		(at 156.21 81.28 180)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify right bottom)
+		)
+		(uuid "3813d52e-da50-46f7-bed5-61adf758d982")
+	)
+	(label "VMID"
+		(at 156.21 102.87 180)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify right bottom)
+		)
+		(uuid "43f59aa1-acaa-455d-a475-6361cd4e94a5")
+	)
+	(label "VMID"
+		(at 156.21 124.46 180)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify right bottom)
+		)
+		(uuid "bd2741a2-0b6b-4158-91fd-5dc39f079e7f")
+	)
+	(label "VMID"
+		(at 156.21 146.05 180)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify right bottom)
+		)
+		(uuid "69a0b4c7-be1c-4a95-8aa9-a655cb00fb53")
+	)
+	(label "VMID"
+		(at 156.21 167.64 180)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify right bottom)
+		)
+		(uuid "a030e05c-a4d4-44c0-9149-e4962ede81a9")
+	)
+	(label "VMID"
+		(at 156.21 189.23 180)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify right bottom)
+		)
+		(uuid "5bbdba3a-44f2-473e-9539-89d4779d4f29")
+	)
+	(no_connect
+		(at 55.88 138.43)
+		(uuid "7efd6ca0-ec47-4822-8cc3-5b95ca8d760f")
+	)
+	(no_connect
+		(at 55.88 140.97)
+		(uuid "429ceebd-7ea1-4956-8d17-e82e32785d37")
+	)
+	(wire
+		(pts
+			(xy 55.88 182.88) (xy 64.77 182.88)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "1ea7e14a-3a6a-4882-accb-fea943effe45")
+	)
+	(label "LED"
+		(at 64.77 182.88 180)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify right bottom)
+		)
+		(uuid "8ea067e5-225a-4218-8aaf-0b88cea21dba")
+	)
+	(wire
+		(pts
+			(xy 55.88 175.26) (xy 64.77 175.26)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "cd4496b8-1a68-4b41-8aa7-0277c7ab2f41")
+	)
+	(label "SYNC"
+		(at 64.77 175.26 180)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify right bottom)
+		)
+		(uuid "80d2b6ab-fb79-4304-8f39-a71635d735f7")
+	)
+	(wire
+		(pts
+			(xy 15.24 182.88) (xy 25.4 182.88)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "dfa19771-ffc0-4f5d-868a-1fd46f7c2e6c")
+	)
+	(label "EXC_SENS"
+		(at 15.24 182.88 0)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify left bottom)
+		)
+		(uuid "0c6002aa-c81d-4883-8ef0-6da8df9e8331")
+	)
+	(text "E-stop: R31 (1k) in series between the bus ESTOP line and PA12.\nLED: C40 (100n) at the WS2812B VDD.\nExcitation sense: R32/R33 divide VAA by 4.01 to PA3 (A2),\nC41 filters it: 2.49 V at 10 V excitation, 1.25 V at 5 V.\nFirmware corrects bridge readings ratiometrically."
+		(exclude_from_sim no)
+		(at 290.83 68.58 0)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify left bottom)
+		)
+		(uuid "dcb32469-5ca1-4729-b341-56381771f987")
+	)
+	(wire
+		(pts
+			(xy 101.854 77.47) (xy 99.822 77.47)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "70bed2ff-d1b7-4894-9c65-ddfdd076978b")
+	)
+	(label "LC2_SIG-"
+		(at 99.822 77.47 180)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify right bottom)
+		)
+		(uuid "1b7ecec4-19d5-48a0-88f2-0f2cf71fab77")
+	)
+	(wire
+		(pts
+			(xy 101.854 163.83) (xy 99.822 163.83)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "f45a881f-34b3-41f9-9a45-6f6a305f01fb")
+	)
+	(label "LC6_SIG-"
+		(at 99.822 163.83 180)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify right bottom)
+		)
+		(uuid "940158d8-5cc2-4911-b954-240d633f28eb")
+	)
+	(wire
+		(pts
+			(xy 101.854 55.88) (xy 99.822 55.88)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "fc42872c-94a4-4fd5-8d12-51a5e48f1f6f")
+	)
+	(label "LC1_SIG-"
+		(at 99.822 55.88 180)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify right bottom)
+		)
+		(uuid "938a8d4e-4abc-4de7-9842-47e3c9a6c09b")
+	)
+	(wire
+		(pts
+			(xy 101.854 34.29) (xy 99.822 34.29)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "699429d3-2aeb-4dfc-91ed-034a1e6d550e")
+	)
+	(label "LC0_SIG-"
+		(at 99.822 34.29 180)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify right bottom)
+		)
+		(uuid "6cdfeca1-2925-420f-9845-86e9ee03fdba")
+	)
+	(wire
+		(pts
+			(xy 101.854 142.24) (xy 99.822 142.24)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "f03f9638-38d9-48e4-8c9b-aa3854fb3aa9")
+	)
+	(label "LC5_SIG-"
+		(at 99.822 142.24 180)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify right bottom)
+		)
+		(uuid "09729168-4839-44b0-bd8c-d3d4f54c4d0a")
+	)
+	(wire
+		(pts
+			(xy 101.854 185.42) (xy 99.822 185.42)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "6293a16e-d254-44ea-845c-ac47daf4b6f8")
+	)
+	(label "LC7_SIG-"
+		(at 99.822 185.42 180)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify right bottom)
+		)
+		(uuid "064b7a01-46f6-4cf3-9c2e-5561f7c11f20")
+	)
+	(wire
+		(pts
+			(xy 101.854 120.65) (xy 99.822 120.65)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "dc8fe750-e138-409c-8380-64ebde153235")
+	)
+	(label "LC4_SIG-"
+		(at 99.822 120.65 180)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify right bottom)
+		)
+		(uuid "4c3711da-3008-4cad-9387-7263fc4f47f5")
+	)
+	(wire
+		(pts
+			(xy 101.854 99.06) (xy 99.822 99.06)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "41f90f23-22e6-4910-aa7b-15810a3478e8")
+	)
+	(label "LC3_SIG-"
+		(at 99.822 99.06 180)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify right bottom)
+		)
+		(uuid "c0e909dd-1f10-4dd6-b583-40826a450909")
 	)
 )

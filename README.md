@@ -16,7 +16,7 @@ microSD and talks to the backplane over I²C.
   page](docs/architecture.md) has a table.
 - JP6 sets the excitation: 1–2 bridged (default) is 10 V; cut it and bridge
   2–3 for 5 V.
-- Bridges connect to J2–J9 (M12): 1 SIG+, 2 SIG−, 3 EXC−, 4 EXC+.
+- Bridges connect to J2–J9 (M12): 1 EXC+, 2 SIG+, 3 EXC−, 4 SIG−.
 - Leave solder bridges SB16 and SB18 on the Nucleo on (the default): bus
   I²C reaches the STM32 through them.
 

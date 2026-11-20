@@ -17,7 +17,7 @@ logs to a microSD card and talks to the bus over I²C.
 
 | Stage | Part | Notes |
 |---|---|---|
-| Bridge connector | J2–J9, Phoenix 1439890 M12 | 1 SIG+, 2 SIG−, 3 EXC− (GNDA), 4 EXC+ (VAA), 5 and shell GNDA |
+| Bridge connector | J2–J9, Phoenix 1439890 M12 | 1 EXC+ (VAA), 2 SIG+, 3 EXC− (GNDA), 4 SIG−, 5 and shell GNDA |
 | Excitation | U8, LT3045 | VAA = 10.0 V (JP6 1–2, default) or 4.99 V (JP6 2–3); 500 mA |
 | Amplifier | U4–U7, AD8426 (two per package) | G = 1 + 49.4 kΩ / Rg; REF = VMID |
 | Anti-alias filter | R1–R16, C5–C12 | 1 kΩ per leg, 10 nF differential |
@@ -75,6 +75,10 @@ joins GNDPWR at NT1.
 
 The ADC's clock must stay within 0.3–8.4 MHz (ADS131M08 datasheet,
 recommended operating conditions).
+
+The WS2812B runs from +5VD and takes its data from PA7 at 3.3 V. Its
+datasheet asks for at least 0.7 × VDD (3.5 V) on DIN, so the LED works
+with less margin than specified; this is a known, accepted limit.
 
 ## Firmware
 

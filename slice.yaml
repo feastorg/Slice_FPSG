@@ -45,7 +45,7 @@ hardware:
       purpose: "power-and-i2c"
     - ref: "J2-J9"
       type: "M12-5pin"
-      purpose: "full-bridge connection: 1 SIG+, 2 SIG-, 3 EXC-, 4 EXC+, 5 GNDA"
+      purpose: "full-bridge connection: 1 EXC+, 2 SIG+, 3 EXC-, 4 SIG-, 5 GNDA"
   mounting:
     pattern: "slice-standard-v0"
     hole_size: "M3"

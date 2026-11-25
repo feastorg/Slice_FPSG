@@ -877,12 +877,6 @@
 		(uuid "84724b66-0864-43aa-8ed6-6e940575c454")
 	)
 	(junction
-		(at 106.68 110.49)
-		(diameter 0)
-		(color 0 0 0 1)
-		(uuid "931bfe50-8aa1-4f28-a104-14a1961c4151")
-	)
-	(junction
 		(at 191.77 110.49)
 		(diameter 0)
 		(color 128 77 0 1)
@@ -893,12 +887,6 @@
 		(diameter 0)
 		(color 128 77 0 1)
 		(uuid "ba685d11-619e-4106-81f6-ccfa594b2ce3")
-	)
-	(junction
-		(at 111.76 110.49)
-		(diameter 0)
-		(color 0 0 0 1)
-		(uuid "c579956c-a16c-44ab-a334-4a5007d0a621")
 	)
 	(junction
 		(at 191.77 72.39)
@@ -921,6 +909,16 @@
 	(no_connect
 		(at 119.38 95.25)
 		(uuid "fcbf30b6-bc8d-4f91-a424-28e1ce6cf2b0")
+	)
+	(wire
+		(pts
+			(xy 135.89 110.49) (xy 140.97 110.49)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "1e341dd1-3a41-49b7-a418-fc31a306c696")
 	)
 	(wire
 		(pts
@@ -1207,17 +1205,6 @@
 			(color 194 0 0 1)
 		)
 		(uuid "77a7c01f-a952-420a-ae75-67b2a77af4df")
-	)
-	(wire
-		(pts
-			(xy 106.68 110.49) (xy 111.76 110.49)
-		)
-		(stroke
-			(width 0.2032)
-			(type default)
-			(color 0 0 0 1)
-		)
-		(uuid "abd77d18-91eb-45cd-97f0-000f8e7beca8")
 	)
 	(wire
 		(pts
@@ -2066,86 +2053,6 @@
 			(project "BREAD_Slice"
 				(path "/66043bca-a260-4915-9fce-8a51d324c687/ba2695dd-f9d0-4a9f-9d4e-ae711593256f"
 					(reference "R29")
-					(unit 1)
-				)
-			)
-		)
-	)
-	(symbol
-		(lib_id "Device:NetTie_2")
-		(at 138.43 110.49 0)
-		(unit 1)
-		(body_style 1)
-		(exclude_from_sim no)
-		(in_bom no)
-		(on_board yes)
-		(in_pos_files yes)
-		(dnp no)
-		(uuid "feee1a54-a0f4-4fe6-8ba7-044273bee089")
-		(property "Reference" "NT3"
-			(at 137.922 108.712 0)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Value" "NetTie_2"
-			(at 138.43 107.95 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Footprint" "NetTie:NetTie-2_SMD_Pad2.0mm"
-			(at 138.43 110.49 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Datasheet" ""
-			(at 138.43 110.49 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Description" "Net tie, 2 pins"
-			(at 138.43 110.49 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(pin "2"
-			(uuid "ece6cee1-e7d9-4ee5-9b36-bb938b97486b")
-		)
-		(pin "1"
-			(uuid "588cf4bd-ecac-4ba3-b84d-8c843b0e8585")
-		)
-		(instances
-			(project "BREAD_Slice"
-				(path "/66043bca-a260-4915-9fce-8a51d324c687/ba2695dd-f9d0-4a9f-9d4e-ae711593256f"
-					(reference "NT3")
 					(unit 1)
 				)
 			)

@@ -6,104 +6,68 @@ Main page for the documentation of the project.
 
 Notes on design.
 
-### External Clock
+The circuit as built is described in [docs/architecture.md](../docs/architecture.md).
+These notes keep the reasons and the part references.
 
-- **Oscillator:** ACO-8.000MHZ-EK
+### ADC Clock
 
-  - 8 MHz XO (Standard) HCMOS, TTL Oscillator, 5V enable/disable
-  - Package: 14-DIP, 4 Leads (Metal Can)
-  - Product: (See Digikey)
-  - Procurement: [Digikey](https://www.digikey.ca/short/9n0brwjd)
-  - Datasheet: [Abracon ACO Datasheet](https://abracon.com/Oscillators/ACO.pdf)
-
-- **Connection:**
-
-  - Powered by a dedicated, low-noise 5V rail (from a TPS7A4901 set to 5V)
-  - Feed clock output to:
-    - ADC’s CLKIN/XTAL1 pin (XTAL2 left unconnected or per datasheet recommendation)
-    - Nano Every’s external clock input (D2/PA00 on the ATmega4809)
-  - Ensures ADC’s modulator clock and MCU SPI SCLK are synchronous
-  - Reference: [Nano Every External Oscillator Info - Arduino Subreddit](https://www.reddit.com/r/arduino/comments/vyi9wo/using_an_external_oscillator_with_the_nano_every/)
-
-    - The onboard programmer on the Nano Every is fully independent and does not rely on bootloaders or clock speed restrictions like the Atmega328-based Arduinos.
-    - You don’t need to set fuses via the Arduino IDE; instead, the clock source can be configured at runtime.
-    - To change the clock source to external (PA00, Arduino pin D2), use the following code snippet:
-
-      ```
-      CPU_CCP = 0xD8;           // Enable writing to protected config registers for the next 4 cycles
-      CLKCTRL.MCLKCTRLA = 0x03; // Set clock output off, select external clock source (PA00)
-      ```
+- The ADS131M08's CLKIN comes from the Nucleo's MCO output (PA8), so the
+  ADC's modulator clock and the MCU share a source. An earlier plan used a
+  separate 8 MHz oscillator on its own LDO; it is not on the board.
+- CLKIN must stay within 0.3–8.4 MHz in high-resolution mode (ADS131M08
+  datasheet, recommended operating conditions).
 
 ### Instrumentation Amplifier
 
-- **Amplifier:** AD8426
-  - Dual instrumentation amplifier (2 channels per package; use 4 for 8 channels)
-  - Product: [AD8426](https://www.analog.com/en/products/ad8426.html)
-  - Procurement: [Digikey](https://www.digikey.ca/short/vj3493t8)
-  - Datasheet: [AD8426 Datasheet](https://www.analog.com/media/en/technical-documentation/data-sheets/AD8426.pdf)
+- **Amplifier:** AD8426, two per package; four packages for eight channels.
+  - Datasheet: [AD8426](https://www.analog.com/media/en/technical-documentation/data-sheets/AD8426.pdf)
+- G = 1 + 49.4 kΩ / Rg. Rg is chosen per build; see the architecture page.
+- REF (100 kΩ input) is driven by the buffered VMID.
 
-- **REF Pin:**
-  - Maintain low source impedance (<2 Ω recommended)
-  - Use a buffered reference (OP1177, see below)
+### Excitation Supply (VAA)
 
-### Analog Reference Voltage Sources
+- **Regulator:** LT3045, 500 mA, 0.8 µVrms.
+  - Datasheet: [LT3045](https://www.analog.com/media/en/technical-documentation/data-sheets/3045fa.pdf)
+- VOUT = 100 µA × R_SET. JP6 picks R21 (100 kΩ, 10.0 V, default) or R24
+  (49.9 kΩ, 4.99 V).
+- Eight 350 Ω bridges at 10 V draw 229 mA. The TPS7A4901 used before is
+  rated for 150 mA.
 
-- **Main Regulator (Analog Front End):** TPS7A4901DGNR
-  - 150-mA, 36-V, low-noise, high-PSRR adjustable LDO
-  - Provides VAA (analog supply) adjustable between ~5V and 10V (up to 12V from a 12V input)
-  - Product: [TPS7A4901DGNR](https://www.ti.com/product/TPS7A49/part-details/TPS7A4901DGNR)
-  - Procurement: [Digikey](https://www.digikey.ca/short/hr5vft5w)
-  - Datasheet: [TPS7A49 Datasheet](https://www.ti.com/lit/ds/symlink/tps7a49.pdf)
+### ADC Supply (+3.3VADC)
 
-- **Clock Regulator:**
-  - A second TPS7A4901 (configured to output a fixed 5V) provides the dedicated, low-noise 5VA rail for the external oscillator.
+- **Regulator:** TPS7A4901, set to 3.30 V by R28 (107 kΩ) and R29 (71.5 kΩ)
+  over R30 (100 kΩ): 1.185 V × (1 + 178.5k / 100k), with VFB from the
+  datasheet. The notebook in this folder works the divider.
+  - Datasheet: [TPS7A49](https://www.ti.com/lit/ds/symlink/tps7a49.pdf)
 
-- **Grounding:**
-  - Analog ground (gnd_a) is kept separate from digital ground, but tied at a star point.
+### Analog Midsupply Reference (VMID)
 
-### Analog Midsupply Voltage Source
-
-- **Reference Buffer:** OP1177 (e.g., OP1177ARMZ)
-  - Precision, low-noise op amp used to buffer a resistor divider (with a multi-turn pot) to generate a tunable mid-supply voltage (VREF)
-  - Provides a high-impedance reference for the REF pins on the AD8426 amplifiers
-  - Product: [OP1177](https://www.analog.com/en/products/op1177.html)
-  - Procurement: [Mouser](https://mou.sr/3E6iI69)
-  - Datasheet: [OP1177 Datasheet](https://www.analog.com/media/en/technical-documentation/data-sheets/op1177_2177_4177.pdf)
-
-- **Implementation:**
-  - Typically one buffered reference can drive all REF pins if layout is good; otherwise, consider one per AD8426.
+- R17/R18 halve +3.3VADC to 1.65 V; U3A (MCP6022) buffers it.
+- VMID drives every AD8426 REF pin and is the return for every ADC negative
+  input, so the amplifier outputs swing 1.65 V ± 1.2 V inside the ADC's range.
 
 ### Antialiasing Filtering
 
-- Simple RC circuits
+- 1 kΩ in each leg and 10 nF across each ADC input pair.
 
 ### External ADC
 
-- **ADC:** ADS131M08IPBS
-  - 24-bit, 32-kSPS, 8-channel simultaneous delta-sigma ADC
-  - Product: [ADS131M08](https://www.ti.com/product/ADS131M08)
-  - Procurement: [Mouser](https://mou.sr/4j7vdgE)
-  - Datasheet: [ADS131M08 Datasheet](https://www.ti.com/lit/ds/symlink/ads131m08.pdf)
+- **ADC:** ADS131M08IPBS, 24-bit, 32 kSPS, 8-channel simultaneous delta-sigma.
+  - Datasheet: [ADS131M08](https://www.ti.com/lit/ds/symlink/ads131m08.pdf)
+- Full scale is ±1.2 V / PGA gain with the internal reference.
 
 ### Load Cell
 
-- **MODEL 1914A FEMUR LOAD CELL**
-- **Overview:**
-  - Provides comprehensive measurements of forces acting on the upper leg just above the knee joint.
-  - Features six measurement channels—three forces and three moments—each implemented as a full-bridge strain gauge circuit.
-- **Excitation:**
-  - Typical excitation is 10 V (nominal), up to 15 V max.
-- **Additional Information:**
-  - Detailed wiring, specifications, and calibration info are available in the separate Load Cell Datasheet.
-  - See [load_cell_specs.md](./load_cell_specs.md) for complete specifications and wiring details (datasheet summary).
+- **MODEL 1914A FEMUR LOAD CELL**: six channels, three forces and three
+  moments, each a full bridge.
+- Excitation is 10 V nominal, 15 V maximum.
+- See [load_cell_specs.md](./load_cell_specs.md) for the full specifications
+  and wiring.
 
 ### SPI & Data Logging
 
-- **SPI Data Capture:**
-  - High-speed SPI data from the ADC is captured by the ATmega4809 (Nano Every)
-  - Utilize DMA to transfer data to a buffer
-- **Data Logging:**
-  - Logging to an SD card (via a high-speed SPI/SDIO interface) and/or real-time USB streaming
+- The STM32L432 reads the ADC on SPI1 and logs to the microSD card on the same
+  bus, with separate chip selects.
 
 ## Style Guide
 
@@ -113,10 +77,10 @@ Notes on design.
 | ------------ | ----------- | --------------------------------------------------------------------------------------------------------- |
 | +12V         | 12V         | 12V Source Supply (from the 12V rail on the backplane)                                                    |
 | GND          | GND         | Common Ground (from the 12V rail's GND on the backplane)                                                  |
-| +5V          | 5V          | Digital 5V Supply (generated by the buck converter for digital circuits)                                  |
-| +5VA         | 5VA         | Dedicated 5V Supply for the external clock oscillator (low-noise LDO output)                              |
-| VAA          | VAA         | Analog Front-End Supply (adjustable, 5–10V, for sensor conditioning, amps)                                |
-| VPP-->VMID   | VMID        | _Renamed VPP symbol to VMID._ Mid-Supply Reference Voltage (buffered via OP1177 for instrumentation amps) |
+| +5VD         | 5VD         | Digital 5V Supply (generated by the buck converter for digital circuits)                                  |
+| +3.3VADC     | 3.3VADC     | ADC analog supply (TPS7A4901, 3.30 V)                                                                     |
+| VAA          | VAA         | Bridge excitation and amplifier supply (LT3045, 10 V or 5 V)                                              |
+| VMID (label) | VMID        | 1.65 V reference for the amplifier REF pins and ADC negative inputs (buffered by MCP6022)                 |
 | GNDA         | AGND        | Analog Ground (for sensor, amps, ADC; tied at star point with DGND)                                       |
 | GNDD         | DGND        | Digital Ground (connected to common ground through heatsink pad)                                          |
 

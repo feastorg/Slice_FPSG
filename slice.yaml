@@ -38,7 +38,7 @@ hardware:
     layers: 4
     thickness: "1.6mm"
     copper_weight: "1oz"
-    dimensions: "70mm x 100mm"
+    dimensions: "100.1mm x 100.0mm"
   connectors:
     - ref: "J1"
       type: "slice-bus-10pin"

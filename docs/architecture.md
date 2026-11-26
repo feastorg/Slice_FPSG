@@ -48,11 +48,11 @@ both excitation voltages at these gains.
 | +12V | Bus J1 pins 2 and 9 | U1, U8, U9 |
 | +5VD | U1, AP63205 buck | Nucleo +5V, U3, LED |
 | +3V3 | Nucleo regulator | ADC DVDD, microSD |
-| +3.3VADC | U9, TPS7A4901, 3.31 V | ADC AVDD, VMID divider |
+| +3.3VADC | U9, TPS7A4901, 3.30 V | ADC AVDD, VMID divider |
 | VAA | U8, LT3045 | Bridges and amplifiers |
 
-GNDA joins GNDPWR at net ties NT2 and NT3, under the two regulators; GNDD
-joins GNDPWR at NT1.
+GNDA joins GNDPWR at net tie NT2, beside U8 (the LT3045); GNDD joins
+GNDPWR at NT1.
 
 ### MCU pins (NUCLEO-L432KC)
 

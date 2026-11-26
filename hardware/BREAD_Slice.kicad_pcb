@@ -5452,6 +5452,7 @@
 		(fp_text user "3"
 			(at 2.6 0 180)
 			(layer "F.SilkS")
+			(hide yes)
 			(uuid "6fa5200f-fa3a-420e-bc9d-580a2cad12f4")
 			(effects
 				(font
@@ -5463,6 +5464,7 @@
 		(fp_text user "1"
 			(at -2.6 0 180)
 			(layer "F.SilkS")
+			(hide yes)
 			(uuid "5e1c95ea-deba-433b-8309-b4fa5336c143")
 			(effects
 				(font

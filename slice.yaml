@@ -112,8 +112,7 @@ artifacts:
   firmware: null
   docs: null
   bom: "documentation/BOM_TEMP.ods"
-  # hardware/Gerbers/ and Gerbers.zip are the r1 (v0.1.0) fab set. CI's
-  # kibot job builds the current gerbers and drills from this board
+  # CI's kibot job builds the gerbers and drills from this board
   # (artifact "kibot-site": hardware/Generated/Gerbers and Drill).
   gerbers: null
   pick_and_place: null

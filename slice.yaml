@@ -1,166 +1,28 @@
-schema_version: "1.0"
-
-# ── Identity ──────────────────────────────────────────────────────────────────
-id: "slice-fpsg"
-name: "Full-Bridge Programmable Strain Gauge Amplifier"
-status: "prototype"
-category: "sensing"
-
-summary: "8-channel full-bridge strain gauge slice: LT3045 excitation, AD8426 amplifiers, ADS131M08 24-bit ADC, microSD logging."
-description: null
-
-# ── Versioning ────────────────────────────────────────────────────────────────
-version:
-  hardware: "0.2.0"
-  firmware: null
-  manifest: "0.1.0"
-
-# ── Compatibility ─────────────────────────────────────────────────────────────
-compatibility:
-  slice_spec: ">=0.1.0 <0.2.0"
-  crumbs_protocol: null
-  anolis_provider_api: null
-
-# ── Hardware ──────────────────────────────────────────────────────────────────
+# slice.yaml: BREAD Slice manifest, schema 2.0 (bread-infra spec/slice/slice-manifest-spec.md)
+schema_version: '2.0'
+id: slice-fpsg
+name: Full-Bridge Programmable Strain Gauge Amplifier
+summary: '8-channel full-bridge strain gauge slice: LT3045 excitation, AD8426 amplifiers, ADS131M08 24-bit
+  ADC, microSD logging.'
+category: sensing
+status: development
 hardware:
-  mcu:
-    type: "dev-board-socket"
-    form_factor: "nucleo32"
-    primary: "STM32L432KC"
-    supported:
-      - "STM32L432KC"
-  primary_ic:
-    manufacturer: "Analog Devices"
-    part_number: "AD8426"
-  hw_gen_current: 1
-  hw_gen_supported: [1]
+  hw_gen_current: 3
+  interface: SI1
   pcb:
     layers: 4
-    thickness: "1.6mm"
-    copper_weight: "1oz"
-    dimensions: "100.1mm x 100.0mm"
-  connectors:
-    - ref: "J1"
-      type: "slice-bus-10pin"
-      purpose: "power-and-i2c"
-    - ref: "J2-J9"
-      type: "M12-5pin"
-      purpose: "full-bridge connection: 1 EXC+, 2 SIG+, 3 EXC-, 4 SIG-, 5 GNDA"
+    dimensions: 100.116mm x 99.951mm
+    thickness: 1.6mm
   mounting:
-    pattern: "slice-standard-v0"
-    hole_size: "M3"
-    inset: "5mm"
-  pcb_color_prototype: null
-  pcb_color_production: null
-  enclosure:
-    supported: false
-    path: null
-
-# ── Electrical ────────────────────────────────────────────────────────────────
-electrical:
-  input_voltage: "12V"
-  logic_voltage: "5V"
-  max_current: null
-  protection: null
-  isolation: null
-
-# ── Interfaces ────────────────────────────────────────────────────────────────
+    pattern: null
+  mcu:
+    form_factor: nucleo32
 interfaces:
   host:
-    type: "i2c"
     address_default: null
-    address_configurable: false
-  data:
-    inputs:
-      - name: "SG1"
-        type: "full-bridge-strain-gauge"
-      - name: "SG2"
-        type: "full-bridge-strain-gauge"
-      - name: "SG3"
-        type: "full-bridge-strain-gauge"
-      - name: "SG4"
-        type: "full-bridge-strain-gauge"
-      - name: "SG5"
-        type: "full-bridge-strain-gauge"
-      - name: "SG6"
-        type: "full-bridge-strain-gauge"
-      - name: "SG7"
-        type: "full-bridge-strain-gauge"
-      - name: "SG8"
-        type: "full-bridge-strain-gauge"
-    outputs: []
-
-# ── Capabilities ──────────────────────────────────────────────────────────────
-capabilities:
-  - id: "strain_gauge_measurement"
-    channels: 8
-    control_modes: []
-
-# ── Firmware ──────────────────────────────────────────────────────────────────
-firmware: null
-
-# ── Protocol ──────────────────────────────────────────────────────────────────
-protocol: null
-
-# ── Software ──────────────────────────────────────────────────────────────────
-software: null
-
-# ── Artifacts ─────────────────────────────────────────────────────────────────
-artifacts:
-  schematic: "hardware/BREAD_Slice.kicad_sch"
-  pcb: "hardware/BREAD_Slice.kicad_pcb"
-  firmware: null
-  docs: null
-  bom: "documentation/BOM_TEMP.ods"
-  # CI's kibot job builds the gerbers and drills from this board
-  # (artifact "kibot-site": hardware/Generated/Gerbers and Drill).
-  gerbers: null
-  pick_and_place: null
-  datasheets:
-    - "documentation/1914-D 6CH Femur Load Cell.pdf"
-
-# ── Manufacturing ─────────────────────────────────────────────────────────────
-manufacturing: null
-
-# ── Validation ────────────────────────────────────────────────────────────────
-validation: null
-
-# ── Safety ────────────────────────────────────────────────────────────────────
-safety: null
-
-# ── Dependencies ──────────────────────────────────────────────────────────────
-dependencies: null
-
-# ── Relations ─────────────────────────────────────────────────────────────────
-related:
-  supersedes: null
-  superseded_by: null
-  variants: []
-  compatible_slices:
-    - "slice-load"
-
-# ── Maintainers ───────────────────────────────────────────────────────────────
-maintainers:
-  - name: "Cameron Brooks"
-    role: "owner"
-
-# ── License ───────────────────────────────────────────────────────────────────
-license:
-  hardware: "CERN-OHL-S-2.0"
-  firmware: null
-  software: null
-  docs: "CC-BY-4.0"
-
-# ── Repository ────────────────────────────────────────────────────────────────
-repository:
-  url: "https://github.com/feastorg/Slice_FPSG"
-
-# ── Metadata ──────────────────────────────────────────────────────────────────
 metadata:
-  created: "2026-05-19"
-  updated: "2026-05-19"
   tags:
-    - "strain-gauge"
-    - "load-cell"
-    - "instrumentation-amplifier"
-    - "force-measurement"
+  - strain-gauge
+  - load-cell
+  - instrumentation-amplifier
+  - force-measurement
